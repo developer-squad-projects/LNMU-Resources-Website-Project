@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LNMU Resources - PYQ, Notes, Syllabus</title>
+    <meta name="description" content="Lalit Narayan Mithila University (LNMU) study materials. Download free PYQ, Notes, and Syllabus for B.A, B.Sc, B.Com, BBA, and BCA easily in one click.">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="top-header">
+        <!-- Changed to goHome() -->
+        <div class="logo-box" onclick="goHome()" style="cursor: pointer;">
+            <div class="logo-icon">🎓</div>
+            <div class="logo-text">
+                <strong>LNMU</strong>
+                <span>Resources</span>
+            </div>
+        </div>
+        
+        <div class="header-actions">
+            <button class="theme-toggle-btn" onclick="toggleDarkMode()">
+                <span id="theme-icon">🌙</span>
+            </button>
+            <button class="hamburger-btn" onclick="openMenu()">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </button>
+        </div>
+    </header>
+
+    <div id="menu-overlay" class="menu-overlay" onclick="closeMenu()"></div>
+    
+    <aside id="side-menu" class="side-menu">
+        <div class="side-menu-header">
+            <h2 class="menu-title">Menu</h2>
+            <button class="close-btn" onclick="closeMenu()">✕</button>
+        </div>
+        <div class="side-menu-items">
+            <button class="menu-card theme-pyq" onclick="menuNavigate('Home')">
+                <div class="menu-icon">🎓</div>
+                <div class="menu-text">
+                    <span class="m-title">Home / होम</span>
+                </div>
+            </button>
+            <button class="menu-card theme-pyq" onclick="menuNavigate('PYQ')">
+                <div class="menu-icon">📄</div>
+                <div class="menu-text">
+                    <span class="m-title">PYQ</span>
+                    <span class="m-sub">Previous Year Questions</span>
+                </div>
+            </button>
+            <button class="menu-card theme-notes" onclick="menuNavigate('Notes')">
+                <div class="menu-icon">📖</div>
+                <div class="menu-text">
+                    <span class="m-title">Notes</span>
+                    <span class="m-sub">Study Notes</span>
+                </div>
+            </button>
+            <button class="menu-card theme-syllabus" onclick="menuNavigate('Syllabus')">
+                <div class="menu-icon">📚</div>
+                <div class="menu-text">
+                    <span class="m-title">Syllabus</span>
+                    <span class="m-sub">पाठ्यक्रम</span>
+                </div>
+            </button>
+            <button class="menu-card theme-contact" onclick="menuNavigate('Contact')">
+                <div class="menu-icon">📞</div>
+                <div class="menu-text">
+                    <span class="m-title">Contact / संपर्क</span>
+                </div>
+            </button>
+        </div>
+        <div class="side-menu-footer">
+            <p>© 2026 LNMU Resources</p>
+        </div>
+    </aside>
+
+    <main class="app-container">
+
+        <section id="home-page" class="page active">
+            <div class="page-header text-center">
+                <h1 class="main-title">LNMU Resources</h1>
+                <h2 class="hindi-subtitle">ललित नारायण मिथिला विश्वविद्यालय</h2>
+            </div>
+            <div class="desc-box">
+                <p>यहां आपको LNMU के सभी कोर्स के PYQ, Notes और Syllabus मिलेंगे।<br>एक क्लिक में देखें और डाउनलोड करें।</p>
+            </div>
+            <div class="card-grid">
+                <button class="main-card theme-pyq" onclick="selectType('PYQ', 'Previous Year Questions', 'पिछले साल के प्रश्न पत्र')">
+                    <div class="card-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                            <polyline points="14 2 14 8 20 8"></polyline>
+                            <line x1="16" y1="13" x2="8" y2="13"></line>
+                            <line x1="16" y1="17" x2="8" y2="17"></line>
+                            <polyline points="10 9 9 9 8 9"></polyline>
+                        </svg>
+                    </div>
+                    <div class="card-text">
+                        <span class="card-title">PYQ</span>
+                        <span class="card-subtitle">पिछले साल के प्रश्न पत्र</span>
+                    </div>
+                </button>
+                <button class="main-card theme-notes" onclick="selectType('Notes', 'Study Notes', 'अध्ययन नोट्स')">
+                    <div class="card-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+                            <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+                            <path d="M12 2v20"></path>
+                        </svg>
+                    </div>
+                    <div class="card-text">
+                        <span class="card-title">Notes</span>
+                        <span class="card-subtitle">अध्ययन नोट्स</span>
+                    </div>
+                </button>
+                <button class="main-card theme-syllabus" onclick="selectType('Syllabus', 'Course Syllabus', 'पाठ्यक्रम')">
+                    <div class="card-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                            <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+                        </svg>
+                    </div>
+                    <div class="card-text">
+                        <span class="card-title">Syllabus</span>
+                        <span class="card-subtitle">पाठ्यक्रम</span>
+                    </div>
+                </button>
+            </div>
+        </section>
+
+        <section id="course-page" class="page">
+            <div class="page-header text-center">
+                <h1 class="dynamic-type-title">Type Name</h1>
+                <h2 class="dynamic-type-subtitle hindi-subtitle">टाइप नाम</h2>
+                <!-- Changed to goBack() -->
+                <button class="back-card-btn" onclick="goBack()">← Back</button>
+                <div class="breadcrumbs-center">Choose Course / कोर्स चुनें</div>
+            </div>
+            <div class="card-grid" id="course-list"></div>
+        </section>
+
+        <section id="semester-page" class="page">
+            <div class="page-header text-center">
+                <h1 class="dynamic-type-title">Type Name</h1>
+                <h2 class="dynamic-type-subtitle hindi-subtitle">टाइप नाम</h2>
+                <button class="back-card-btn" onclick="goBack()">← Back</button>
+                <div class="breadcrumbs-center dynamic-course-title">Course</div>
+                <div class="breadcrumbs-sub">Choose Semester / सेमेस्टर चुनें</div>
+            </div>
+            <div class="card-grid" id="semester-list"></div>
+        </section>
+
+        <section id="subject-page" class="page">
+            <div class="page-header text-center">
+                <h1 class="dynamic-type-title">Type Name</h1>
+                <h2 class="dynamic-type-subtitle hindi-subtitle">टाइप नाम</h2>
+                <button class="back-card-btn" onclick="goBack()">← Back</button>
+                <div class="breadcrumbs-center dynamic-course-title">Course</div>
+                <div class="breadcrumbs-sub">Choose Subject / विषय चुनें</div>
+            </div>
+            <div class="search-box">
+                <span class="search-icon">🔍</span>
+                <input type="text" id="subject-search-bar" class="search-input" placeholder="Search... / खोजें..." onkeyup="filterSubjects()">
+            </div>
+            <div class="card-grid" id="subject-list"></div>
+        </section>
+
+        <section id="resource-page" class="page">
+            <div class="page-header text-center">
+                <h1 class="dynamic-type-title">Type Name</h1>
+                <h2 class="dynamic-type-subtitle hindi-subtitle">टाइप नाम</h2>
+                <button class="back-card-btn" onclick="goBack()">← Back</button>
+                <div class="breadcrumbs-center dynamic-course-title">Course</div>
+                <div class="breadcrumbs-sub dynamic-subject-title">Subject</div>
+            </div>
+            <div class="search-box">
+                <span class="search-icon">🔍</span>
+                <input type="text" class="search-input" placeholder="Search... / खोजें...">
+            </div>
+            <div class="pill-tabs">
+                <button class="pill-tab active" onclick="setCategory('Major')">Major</button>
+                <button class="pill-tab" onclick="setCategory('Minor')">Minor</button>
+                <button class="pill-tab" onclick="setCategory('MDC')">MDC</button>
+                <button class="pill-tab" onclick="setCategory('VAC')">VAC</button>
+            </div>
+            <div class="resource-list" id="resource-list"></div>
+        </section>
+
+        <section id="pdf-viewer-page" class="page">
+            <div class="page-header text-center">
+                <h1 class="dynamic-type-title">Type Name</h1>
+                <h2 class="dynamic-type-subtitle hindi-subtitle">टाइप नाम</h2>
+                <button class="back-card-btn" onclick="goBack()">✕ Close</button>
+                <div class="breadcrumbs-center dynamic-subject-title" style="margin-top: 15px; color: var(--text-dark);">Subject</div>
+                <div id="pdf-title" class="pdf-title-text" style="color: var(--dynamic-primary); font-size: 1.05rem; font-weight: 500; margin-top: 8px;">Document Name</div>
+                <div id="pdf-year" style="color: var(--dynamic-primary); font-size: 0.95rem; margin-top: 5px; margin-bottom: 20px;">2025</div>
+                <div class="viewer-action-row">
+                    <button class="viewer-download-btn" id="viewer-download-btn">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                            <polyline points="7 10 12 15 17 10"></polyline>
+                            <line x1="12" y1="15" x2="12" y2="3"></line>
+                        </svg>
+                        Download
+                    </button>
+                    <a id="viewer-newtab-btn" class="viewer-newtab-btn" href="#" target="_blank" rel="noopener noreferrer">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                            <polyline points="15 3 21 3 21 9"></polyline>
+                            <line x1="10" y1="14" x2="21" y2="3"></line>
+                        </svg>
+                        Open In New Tab
+                    </a>
+                </div>
+            </div>
+            <div class="pdf-container">
+                <iframe id="real-pdf-viewer" src="" width="100%" height="100%" style="border: none; border-radius: 12px;"></iframe>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+        <div class="contact-card">
+            <h3 class="contact-title">Contact Us / संपर्क करें</h3>
+            <div class="contact-links">
+                <a href="mailto:lnmuresources@gmail.com" class="contact-item">
+                    <div class="contact-icon">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                            <polyline points="22,6 12,13 2,6"></polyline>
+                        </svg>
+                    </div>
+                    <span>lnmuresources@gmail.com</span>
+                </a>
+                <a href="https://wa.me/911234567890" target="_blank" class="contact-item">
+                    <div class="contact-icon">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                        </svg>
+                    </div>
+                    <span>+91 1234567890</span>
+                </a>
+                <a href="#" class="contact-item">
+                    <div class="contact-icon">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <line x1="2" y1="12" x2="22" y2="12"></line>
+                            <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+                        </svg>
+                    </div>
+                    <span>www.lnmuresources.com</span>
+                </a>
+            </div>
+            <hr class="contact-divider">
+            <p class="copyright">© 2026 LNMU Resources. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
