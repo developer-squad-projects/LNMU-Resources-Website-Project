@@ -5,8 +5,15 @@
 // 1. Courses List (Added durationType to support both Semester & Year)
 const coursesData = [
     { name: 'B.A. (Arts)', hindi: 'बी.ए.', durationType: 'Semester', durationCount: 8 },
+    { name: 'B.Sc. (Science)', hindi: 'बी.एससी.', durationType: 'Semester', durationCount: 8 },
+    { name: 'B.Com. (Commerce)', hindi: 'बी.कॉम.', durationType: 'Semester', durationCount: 8 },
+    { name: 'M.A. (Arts PG)', hindi: 'एम.ए. (पीजी)', durationType: 'Semester', durationCount: 4 },
+    { name: 'M.Sc. (Science PG)', hindi: 'एम.एससी. (पीजी)', durationType: 'Semester', durationCount: 4 },
+    { name: 'M.Com. (Commerce PG)', hindi: 'एम.कॉम.', durationType: 'Semester', durationCount: 4 },
     { name: 'B.Ed. (Teaching)', hindi: 'बी.एड.', durationType: 'Year', durationCount: 2 }, // Year-wise Course
-    { name: 'M.Com. (Commerce PG)', hindi: 'एम.कॉम.', durationType: 'Semester', durationCount: 4 }
+    { name: 'BCA', hindi: 'बी.सी.ए.', durationType: 'Semester', durationCount: 8 },
+    { name: 'BBA', hindi: 'बी.बी.ए.', durationType: 'Semester', durationCount: 8 },
+    
 ];
 
 // 2. Course & Duration Wise Subjects List (With Dynamic Categories)
