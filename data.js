@@ -25,7 +25,7 @@ const subjectsData = {
             // Example 2: Subject with NO categories (Direct PDF)
             {name: 'Hindi', hindi: 'हिंदी', categories: ['Major', 'Minor', 'MDC', 'AEC', 'SEC', 'VAC'] },
             { name: 'Environmental Studies', hindi: 'पर्यावरण अध्ययन', categories: [] } ,
-            { name: 'Swakshar Bharat', hindi: 'स्वच्छ भारत', categories: [] },
+            { name: 'Swach Bharat', hindi: 'स्वच्छ भारत', categories: [] },
             { name: 'Basic IT Tools', hindi: 'बेसिक आईटी टूल्स', categories: [] }
         ]
     },
@@ -75,8 +75,8 @@ const pdfDatabase = {
     "B.A. (Arts)_Semester 1_Basic IT Tools_PYQ": [
         { title: "Basic IT Tools PYQ 2026", year: "2025", url: "PYQ_Pdfs/Basics IT Tools sem-1 SEC 2026.pdf" }
     ],
-    "B.A. (Arts)_Semester 1_Swakshar Bharat_PYQ": [
-        { title: "Swakshar Bharat PYQ 2026", year: "2025", url: "PYQ_Pdfs/Swaksha Bharat sem-1 VAC 2026.pdf" }
+    "B.A. (Arts)_Semester 1_Swach Bharat_PYQ": [
+        { title: "Swach Bharat PYQ 2026", year: "2025", url: "PYQ_Pdfs/Swach Bharat sem-1 VAC 2026.pdf" }
     ],
     
 
