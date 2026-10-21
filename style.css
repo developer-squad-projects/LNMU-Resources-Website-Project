@@ -48,7 +48,7 @@ button { cursor: pointer; border: none; outline: none; background: none; color: 
 
 /* ================== Header ================== */
 .top-header { display: flex; justify-content: space-between; align-items: center; padding: 16px 20px; max-width: 600px; margin: 0 auto; width: 100%; position: sticky; top: 0; z-index: 100; background: var(--bg-light); transition: background-color 0.3s ease; }
-.logo-box { display: flex; align-items: center; gap: 8px; background: var(--white); padding: 8px 14px; border-radius: var(--radius-pill); box-shadow: var(--shadow-soft); transition: var(--transition); }
+.logo-box { display: flex; align-items: center; gap: 8px; background: var(--white); padding: 8px 14px; border-radius: var(--radius-pill); box-shadow: var(--shadow-soft); transition: var(--transition); cursor: pointer; }
 .logo-icon { font-size: 1.4rem; color: var(--dynamic-primary); transition: color 0.3s ease; }
 .logo-text { display: flex; flex-direction: column; line-height: 1.1; }
 .logo-text strong { font-size: 0.95rem; color: var(--text-dark); transition: color 0.3s ease; }
@@ -79,8 +79,25 @@ body.dark-mode .menu-title { color: #818cf8; }
 .menu-text { display: flex; flex-direction: column; }
 .m-title { font-size: 1.05rem; font-weight: 600; color: var(--text-dark); }
 .m-sub { font-size: 0.75rem; font-weight: 500; margin-top: 2px; }
-.side-menu-footer { padding-top: 20px; border-top: 1px solid var(--border-soft); text-align: center; margin-top: 20px; transition: border-color 0.3s ease; }
-.side-menu-footer p { font-size: 0.8rem; color: var(--text-muted); transition: color 0.3s ease; }
+
+/* Menu Themes */
+.menu-card.theme-pyq { background-color: #eef2ff; border-color: #dbeafe; }
+.menu-card.theme-pyq .menu-icon, .menu-card.theme-pyq .m-title { color: #4f46e5; }
+.menu-card.theme-notes { background-color: #f0fdf4; border-color: #bbf7d0; }
+.menu-card.theme-notes .menu-icon, .menu-card.theme-notes .m-title { color: #059669; }
+.menu-card.theme-syllabus { background-color: #faf5ff; border-color: #e9d5ff; }
+.menu-card.theme-syllabus .menu-icon, .menu-card.theme-syllabus .m-title { color: #9333ea; }
+.menu-card.theme-contact { background-color: #fff7ed; border-color: #fed7aa; }
+.menu-card.theme-contact .menu-icon, .menu-card.theme-contact .m-title { color: #ea580c; }
+
+body.dark-mode .menu-card.theme-pyq { background-color: #1e1e2d; border-color: #312e81; }
+body.dark-mode .menu-card.theme-pyq .menu-icon, body.dark-mode .menu-card.theme-pyq .m-title { color: #818cf8; }
+body.dark-mode .menu-card.theme-notes { background-color: #14251e; border-color: #064e3b; }
+body.dark-mode .menu-card.theme-notes .menu-icon, body.dark-mode .menu-card.theme-notes .m-title { color: #34d399; }
+body.dark-mode .menu-card.theme-syllabus { background-color: #231533; border-color: #581c87; }
+body.dark-mode .menu-card.theme-syllabus .menu-icon, body.dark-mode .menu-card.theme-syllabus .m-title { color: #c084fc; }
+body.dark-mode .menu-card.theme-contact { background-color: #2e1c12; border-color: #7c2d12; }
+body.dark-mode .menu-card.theme-contact .menu-icon, body.dark-mode .menu-card.theme-contact .m-title { color: #fb923c; }
 
 /* ================== App Container & Pages ================== */
 .app-container { max-width: 600px; margin: 0 auto; padding: 10px 20px 30px; flex: 1; width: 100%; }
@@ -102,7 +119,7 @@ body.dark-mode .menu-title { color: #818cf8; }
 .back-card-btn { background: var(--white); color: var(--text-dark); width: 100%; padding: 12px; font-size: 1rem; font-weight: 600; border-radius: var(--radius-lg); box-shadow: var(--shadow-soft); margin-bottom: 10px; transition: var(--transition); border: 1px solid var(--border-soft); }
 .back-card-btn:active { transform: scale(0.98); border-color: var(--dynamic-primary); color: var(--dynamic-primary); }
 
-/* ================== Home Page & Menu Cards ================== */
+/* ================== Home Page Cards ================== */
 .card-grid { display: flex; flex-direction: column; gap: 16px; }
 .main-card { padding: 16px 20px; border-radius: var(--radius-lg); box-shadow: var(--shadow-soft); display: flex; align-items: center; gap: 20px; text-align: left; border: 2px solid transparent; transition: var(--transition); }
 .card-text { display: flex; flex-direction: column; }
@@ -110,7 +127,6 @@ body.dark-mode .menu-title { color: #818cf8; }
 .card-subtitle { font-size: 0.9rem; font-weight: 500; }
 .card-icon { width: 65px; height: 65px; border-radius: 14px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; transition: var(--transition); }
 
-/* --- Light Mode Colors for Home Page Cards --- */
 .main-card.theme-pyq { background-color: #eef2ff; border-color: #dbeafe; }
 .main-card.theme-pyq .card-icon { background-color: #dbeafe; color: #4f46e5; }
 .main-card.theme-pyq .card-subtitle { color: #4f46e5; }
@@ -126,29 +142,15 @@ body.dark-mode .menu-title { color: #818cf8; }
 .main-card.theme-syllabus .card-subtitle { color: #9333ea; }
 .main-card.theme-syllabus:hover, .main-card.theme-syllabus:active { border-color: #9333ea; box-shadow: 0 6px 15px rgba(147, 51, 234, 0.15); transform: translateY(-2px); }
 
-/* --- Sidebar Menu Cards Colors --- */
-.menu-card.theme-pyq { background: #eef2ff; color: #4f46e5; border-color: #dbeafe; }
-.menu-card.theme-notes { background: #f0fdf4; color: #059669; border-color: #bbf7d0; }
-.menu-card.theme-syllabus { background: #faf5ff; color: #9333ea; border-color: #e9d5ff; }
-.menu-card.theme-contact { background: #fff7ed; color: #ea580c; border-color: #fed7aa; }
-
-/* --- Dark Mode Overrides for Home Page & Menu Cards --- */
 body.dark-mode .main-card.theme-pyq { background-color: #1e1e2d; border-color: #312e81; }
 body.dark-mode .main-card.theme-pyq .card-icon { background-color: #312e81; color: #818cf8; }
 body.dark-mode .main-card.theme-pyq .card-subtitle { color: #818cf8; }
-body.dark-mode .menu-card.theme-pyq { background: #1e1e2d; border-color: #312e81; }
-
 body.dark-mode .main-card.theme-notes { background-color: #14251e; border-color: #064e3b; }
 body.dark-mode .main-card.theme-notes .card-icon { background-color: #064e3b; color: #34d399; }
 body.dark-mode .main-card.theme-notes .card-subtitle { color: #34d399; }
-body.dark-mode .menu-card.theme-notes { background: #14251e; border-color: #064e3b; }
-
 body.dark-mode .main-card.theme-syllabus { background-color: #231533; border-color: #581c87; }
 body.dark-mode .main-card.theme-syllabus .card-icon { background-color: #581c87; color: #c084fc; }
 body.dark-mode .main-card.theme-syllabus .card-subtitle { color: #c084fc; }
-body.dark-mode .menu-card.theme-syllabus { background: #231533; border-color: #581c87; }
-
-body.dark-mode .menu-card.theme-contact { background: #2e1c12; border-color: #7c2d12; color: #fb923c; }
 
 /* ================== Dynamic List Cards ================== */
 .list-card { background: var(--white); padding: 18px; border-radius: var(--radius-lg); box-shadow: var(--shadow-soft); font-size: 1.1rem; font-weight: 600; text-align: center; color: var(--text-dark); transition: var(--transition); display: flex; flex-direction: column; gap: 4px; border: 1px solid var(--border-soft); }
@@ -180,26 +182,57 @@ body.dark-mode .menu-card.theme-contact { background: #2e1c12; border-color: #7c
 .dl-btn:hover { border-color: var(--dynamic-primary); color: var(--dynamic-primary); background: transparent; }
 .action-btn:active { transform: scale(0.95); }
 
-/* ================== Real PDF Viewer ================== */
-.viewer-action-row { display: flex; gap: 12px; margin-bottom: 10px; width: 100%; }
-.viewer-download-btn { background: var(--dynamic-primary); color: #ffffff; flex: 1; padding: 14px 10px; font-size: 1rem; font-weight: 600; border-radius: 12px; display: flex; align-items: center; justify-content: center; gap: 7px; box-shadow: var(--shadow-soft); transition: var(--transition); border: none; cursor: pointer; }
-.viewer-download-btn:active { transform: scale(0.98); }
-.viewer-newtab-btn { background: var(--btn-grey); color: var(--text-dark); flex: 1; padding: 14px 10px; font-size: 1rem; font-weight: 600; border-radius: 12px; display: flex; align-items: center; justify-content: center; gap: 7px; box-shadow: var(--shadow-soft); transition: var(--transition); border: 1px solid var(--border-soft); text-decoration: none; cursor: pointer; }
-.viewer-newtab-btn:hover, .viewer-newtab-btn:active { background: var(--dynamic-primary); color: #ffffff; border-color: var(--dynamic-primary); transform: scale(0.98); }
 
-/* ✨ UPDATED: Mobile view height and padding fixed for PDF container */
-.pdf-container { 
+/* ================== PDF Viewer Action Buttons ================== */
+.pdf-action-btns { 
+    display: flex; 
+    flex-direction: row; /* Ensure side-by-side */
+    gap: 12px; 
+    margin-bottom: 20px; 
     width: 100%; 
-    height: 85vh; 
-    background: var(--white); 
-    border-radius: var(--radius-lg); 
-    padding: 8px; 
-    border: 1px solid var(--border-soft); 
-    box-shadow: var(--shadow-soft); 
-    margin-top: 10px; 
-    margin-bottom: 40px; 
-    transition: background-color 0.3s ease; 
 }
+
+.viewer-btn { 
+    flex: 1; /* Equal space */
+    padding: 12px; 
+    font-size: 1rem; 
+    font-weight: 600; 
+    border-radius: 12px; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    gap: 8px; 
+    box-shadow: var(--shadow-soft); 
+    transition: var(--transition); 
+    cursor: pointer; 
+    border: none;
+}
+
+.viewer-btn:active { transform: scale(0.96); }
+
+/* Light Mode Specific Colors for PDF Buttons */
+.viewer-download-btn { 
+    background-color: var(--dynamic-primary); 
+    color: #ffffff; 
+}
+
+.viewer-open-btn { 
+    background-color: var(--white); 
+    color: var(--text-dark); 
+    border: 1px solid var(--border-soft); 
+}
+
+/* Dark Mode Specific Colors for PDF Buttons */
+body.dark-mode .viewer-open-btn { 
+    background-color: var(--btn-grey); /* Nice dark grey */
+    border-color: var(--border-soft); 
+    color: #ffffff; 
+}
+body.dark-mode .viewer-download-btn {
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+}
+
+.pdf-container { width: 100%; height: 85vh; background: var(--white); border-radius: var(--radius-lg); padding: 8px; border: 1px solid var(--border-soft); box-shadow: var(--shadow-soft); margin-top: 10px; margin-bottom: 40px; transition: background-color 0.3s ease; }
 .pdf-title-text { color: var(--dynamic-primary); margin-top: 10px; transition: color 0.3s ease; }
 
 /* ================== Contact Footer ================== */
@@ -212,3 +245,29 @@ body.dark-mode .menu-card.theme-contact { background: #2e1c12; border-color: #7c
 .contact-icon { color: var(--dynamic-primary); display: flex; align-items: center; justify-content: center; transition: color 0.3s ease; }
 .contact-divider { border: none; border-top: 1px solid var(--border-soft); margin: 20px 0; transition: border-color 0.3s ease;}
 .copyright { font-size: 0.85rem; color: var(--text-muted); transition: color 0.3s ease;}
+
+/* ================== Updated Social Media & WhatsApp Group Theme ================== */
+.contact-item.contact-whatsapp-pill { background-color: #25D366 !important; color: #ffffff !important; border-color: #25D366 !important; }
+.contact-item.contact-whatsapp-pill .contact-icon { color: #ffffff !important; }
+.contact-item.contact-whatsapp-pill:hover, .contact-item.contact-whatsapp-pill:active { transform: scale(0.98); box-shadow: 0 4px 14px rgba(37, 211, 102, 0.35); }
+
+.social-icons-wrapper { display: flex; justify-content: center; gap: 18px; margin-bottom: 20px; }
+.social-btn { width: 54px; height: 54px; display: flex; align-items: center; justify-content: center; border-radius: 50%; transition: all 0.3s ease; text-decoration: none; }
+
+.social-btn.whatsapp { background: #25D366; color: #ffffff; border: 1px solid #25D366; }
+.social-btn.instagram { background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); color: #ffffff; border: 1px solid transparent; }
+.social-btn.facebook { background: #1877F2; color: #ffffff; border: 1px solid #1877F2; }
+
+.social-btn:hover, .social-btn:active { transform: translateY(-4px) scale(1.06); box-shadow: 0 8px 18px rgba(0, 0, 0, 0.18); filter: brightness(1.08); }
+body.dark-mode .social-btn { box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4); }
+
+/* ================== Dynamic Message Box ================== */
+.dynamic-msg-box { padding: 12px 16px; border-radius: var(--radius-lg); font-size: 0.9rem; font-weight: 500; margin-top: 5px; margin-bottom: 20px; text-align: center; display: none; transition: var(--transition); }
+
+body.theme-active-pyq .dynamic-msg-box { background: #eef2ff; color: #4f46e5; border: 1px solid #dbeafe; }
+body.theme-active-notes .dynamic-msg-box { background: #f0fdf4; color: #059669; border: 1px solid #bbf7d0; }
+body.theme-active-syllabus .dynamic-msg-box { background: #faf5ff; color: #9333ea; border: 1px solid #e9d5ff; }
+
+body.dark-mode.theme-active-pyq .dynamic-msg-box { background: #1e1e2d; color: #818cf8; border: 1px solid #312e81; }
+body.dark-mode.theme-active-notes .dynamic-msg-box { background: #14251e; color: #34d399; border: 1px solid #064e3b; }
+body.dark-mode.theme-active-syllabus .dynamic-msg-box { background: #231533; color: #c084fc; border: 1px solid #581c87; }
