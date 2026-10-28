@@ -30,8 +30,8 @@ const PYQ_CoursesStructure = [
                 { subjectName: 'Hindi', hindi: 'हिंदी', categories: ['MJC-2', 'MIC-2', 'MDC', 'AEC', 'SEC', 'VAC'] },
                 { subjectName: 'English', hindi: 'अंग्रेज़ी', categories: ['MJC-2', 'MIC-2', 'MDC', 'AEC', 'SEC', 'VAC'] },
                 { subjectName: 'Environmental Science', hindi: 'पर्यावरण विज्ञान', categories: ['None'] },
-                { subjectName: 'Constitutional Values & Duties', hindi: 'संविधानिक मूल्य', categories: ['None'] },
-                { subjectName: 'Personality Development', hindi: 'व्यक्तित्व विकास', categories: ['None'] }
+                { subjectName: 'Constitutional Values & Fundamental Duties', hindi: 'संविधानिक मूल्य और मौलिक कर्तव्य', categories: ['None'] },
+                { subjectName: 'Personality Development & Communications', hindi: 'व्यक्तित्व विकास और संचार', categories: ['None'] }
             ],
             'Semester 3': [
                 { subjectName: 'History', hindi: 'इतिहास', categories: ['MJC-3', 'MJC-4', 'MIC-3', 'MDC', 'VAC', 'AEC','SEC'] },
@@ -93,23 +93,62 @@ const PYQ_CoursesStructure = [
         courseName: 'B.Sc. (Science)', hindi: 'बी.एससी.', durationType: 'Semester', durationCount: 8,
         durations: {
             'Semester 1': [
-                { subjectName: 'Physics', hindi: 'भौतिकी', categories: ['Major', 'Minor'] },
-                { subjectName: 'Chemistry', hindi: 'रसायन विज्ञान', categories: ['Major', 'Minor'] },
-                { subjectName: 'Mathematics', hindi: 'गणित', categories: ['Major', 'Minor'] },
-                { subjectName: 'Biology', hindi: 'जीव विज्ञान', categories: ['Major', 'Minor'] }
+                { subjectName: 'Botany', hindi: 'बाटनी', categories: ['MJC-1', 'MIC-1'] },
+                { subjectName: 'Chemistry', hindi: 'रसायन विज्ञान', categories: ['MJC-1', 'MIC-1'] },
+                { subjectName: 'Mathematics', hindi: 'गणित', categories: ['MJC-1', 'MIC-1'] },
+                { subjectName: 'Physics', hindi: 'भौतिकी', categories: ['MJC-1', 'MIC-1'] },
+                { subjectName: 'Zoology', hindi: 'ज़ूलॉजी', categories: ['MJC-1', 'MIC-1'] }
             ],
             'Semester 2': [
-                { subjectName: 'Physics', hindi: 'भौतिकी', categories: ['Major', 'Minor'] },
-                { subjectName: 'Chemistry', hindi: 'रसायन विज्ञान', categories: ['Major', 'Minor'] },
-                { subjectName: 'Mathematics', hindi: 'गणित', categories: ['Major', 'Minor'] },
-                { subjectName: 'Biology', hindi: 'जीव विज्ञान', categories: ['Major', 'Minor'] }
+                { subjectName: 'Botany', hindi: 'बाटनी', categories: ['MJC-2', 'MIC-2'] },
+                { subjectName: 'Chemistry', hindi: 'रसायन विज्ञान', categories: ['MJC-2', 'MIC-2'] },
+                { subjectName: 'Mathematics', hindi: 'गणित', categories: ['MJC-2', 'MIC-2'] },
+                { subjectName: 'Physics', hindi: 'भौतिकी', categories: ['MJC-2', 'MIC-2'] },
+                { subjectName: 'Zoology', hindi: 'ज़ूलॉजी', categories: ['MJC-2', 'MIC-2'] }
             ],
-            'Semester 3': [{ subjectName: 'Physics', hindi: 'भौतिकी', categories: ['Major', 'Minor'] }, { subjectName: 'Chemistry', hindi: 'रसायन विज्ञान', categories: ['Major', 'Minor'] }, { subjectName: 'Mathematics', hindi: 'गणित', categories: ['Major', 'Minor'] }, { subjectName: 'Biology', hindi: 'जीव विज्ञान', categories: ['Major', 'Minor'] }],
-            'Semester 4': [{ subjectName: 'Physics', hindi: 'भौतिकी', categories: ['Major', 'Minor'] }, { subjectName: 'Chemistry', hindi: 'रसायन विज्ञान', categories: ['Major', 'Minor'] }, { subjectName: 'Mathematics', hindi: 'गणित', categories: ['Major', 'Minor'] }, { subjectName: 'Biology', hindi: 'जीव विज्ञान', categories: ['Major', 'Minor'] }],
-            'Semester 5': [{ subjectName: 'Physics', hindi: 'भौतिकी', categories: ['Major', 'Minor'] }, { subjectName: 'Chemistry', hindi: 'रसायन विज्ञान', categories: ['Major', 'Minor'] }, { subjectName: 'Mathematics', hindi: 'गणित', categories: ['Major', 'Minor'] }, { subjectName: 'Biology', hindi: 'जीव विज्ञान', categories: ['Major', 'Minor'] }],
-            'Semester 6': [{ subjectName: 'Physics', hindi: 'भौतिकी', categories: ['Major', 'Minor'] }, { subjectName: 'Chemistry', hindi: 'रसायन विज्ञान', categories: ['Major', 'Minor'] }, { subjectName: 'Mathematics', hindi: 'गणित', categories: ['Major', 'Minor'] }, { subjectName: 'Biology', hindi: 'जीव विज्ञान', categories: ['Major', 'Minor'] }],
-            'Semester 7': [{ subjectName: 'Physics', hindi: 'भौतिकी', categories: ['Major', 'Minor'] }, { subjectName: 'Chemistry', hindi: 'रसायन विज्ञान', categories: ['Major', 'Minor'] }, { subjectName: 'Mathematics', hindi: 'गणित', categories: ['Major', 'Minor'] }, { subjectName: 'Biology', hindi: 'जीव विज्ञान', categories: ['Major', 'Minor'] }],
-            'Semester 8': [{ subjectName: 'Physics', hindi: 'भौतिकी', categories: ['Major', 'Minor'] }, { subjectName: 'Chemistry', hindi: 'रसायन विज्ञान', categories: ['Major', 'Minor'] }, { subjectName: 'Mathematics', hindi: 'गणित', categories: ['Major', 'Minor'] }, { subjectName: 'Biology', hindi: 'जीव विज्ञान', categories: ['Major', 'Minor'] }]
+            'Semester 3': [
+                { subjectName: 'Botany', hindi: 'बाटनी', categories: ['MJC-3', 'MJC-4', 'MIC-3'] },
+                { subjectName: 'Chemistry', hindi: 'रसायन विज्ञान', categories: ['MJC-3', 'MJC-4', 'MIC-3'] },
+                { subjectName: 'Mathematics', hindi: 'गणित', categories: ['MJC-3', 'MJC-4', 'MIC-3'] },
+                { subjectName: 'Physics', hindi: 'भौतिकी', categories: ['MJC-3', 'MJC-4', 'MIC-3'] },
+                { subjectName: 'Zoology', hindi: 'ज़ूलॉजी', categories: ['MJC-3', 'MJC-4', 'MIC-3'] }
+            ],
+            'Semester 4': [
+                { subjectName: 'Botany', hindi: 'बाटनी', categories: ['MJC-5', 'MJC-6', 'MJC-7', 'MIC-4'] },
+                { subjectName: 'Chemistry', hindi: 'रसायन विज्ञान', categories: ['MJC-5', 'MJC-6', 'MJC-7', 'MIC-4'] },
+                { subjectName: 'Mathematics', hindi: 'गणित', categories: ['MJC-5', 'MJC-6', 'MJC-7', 'MIC-4'] },
+                { subjectName: 'Physics', hindi: 'भौतिकी', categories: ['MJC-5', 'MJC-6', 'MJC-7', 'MIC-4'] },
+                { subjectName: 'Zoology', hindi: 'ज़ूलॉजी', categories: ['MJC-5', 'MJC-6', 'MJC-7', 'MIC-4'] },
+                { subjectName: 'NCC', hindi: 'एनसीसी', categories: ['None'] }
+            ],
+            'Semester 5': [
+                { subjectName: 'Botany', hindi: 'बाटनी', categories: ['MJC-8', 'MJC-9', 'MIC-5', 'MIC-6'] },
+                { subjectName: 'Chemistry', hindi: 'रसायन विज्ञान', categories: ['MJC-8', 'MJC-9', 'MIC-6'] },
+                { subjectName: 'Mathematics', hindi: 'गणित', categories: ['MJC-8', 'MJC-9', 'MIC-5', 'MIC-6'] },
+                { subjectName: 'Physics', hindi: 'भौतिकी', categories: ['MJC-8', 'MJC-9', 'MIC-5', 'MIC-6'] },
+                { subjectName: 'Zoology', hindi: 'ज़ूलॉजी', categories: ['MJC-8', 'MJC-9', 'MIC-5', 'MIC-6'] }
+            ],
+            'Semester 6': [
+                { subjectName: 'Botany', hindi: 'बाटनी', categories: ['MJC-10', 'MJC-11', 'MJC-12', 'MIC-7', 'MIC-8'] },
+                { subjectName: 'Chemistry', hindi: 'रसायन विज्ञान', categories: ['MJC-10', 'MJC-11', 'MJC-12', 'MIC-7', 'MIC-8'] },
+                { subjectName: 'Mathematics', hindi: 'गणित', categories: ['MJC-10', 'MJC-11', 'MJC-12', 'MIC-7', 'MIC-8'] },
+                { subjectName: 'Physics', hindi: 'भौतिकी', categories: ['MJC-10', 'MJC-11', 'MJC-12', 'MIC-7', 'MIC-8'] },
+                { subjectName: 'Zoology', hindi: 'ज़ूलॉजी', categories: ['MJC-10', 'MJC-11', 'MJC-12', 'MIC-7', 'MIC-8'] }
+            ],
+            'Semester 7': [
+                { subjectName: 'Botany', hindi: 'बाटनी', categories: ['MJC-13', 'MJC-14', 'MJC-15', 'MIC-9'] },
+                { subjectName: 'Chemistry', hindi: 'रसायन विज्ञान', categories: ['MJC-13', 'MJC-14', 'MJC-15', 'MIC-9'] },
+                { subjectName: 'Mathematics', hindi: 'गणित', categories: ['MJC-13', 'MJC-14', 'MJC-15', 'MIC-9'] },
+                { subjectName: 'Physics', hindi: 'भौतिकी', categories: ['MJC-13', 'MJC-14', 'MJC-15', 'MIC-9'] },
+                { subjectName: 'Zoology', hindi: 'ज़ूलॉजी', categories: ['MJC-13', 'MJC-14', 'MJC-15', 'MIC-9'] }
+            ],
+            'Semester 8': [
+                { subjectName: 'Botany', hindi: 'बाटनी', categories: ['MJC-16', 'MIC-10'] },
+                { subjectName: 'Chemistry', hindi: 'रसायन विज्ञान', categories: ['MJC-16', 'MIC-10'] },
+                { subjectName: 'Mathematics', hindi: 'गणित', categories: ['MJC-16', 'MIC-10'] },
+                { subjectName: 'Physics', hindi: 'भौतिकी', categories: ['MJC-16', 'MIC-10'] },
+                { subjectName: 'Zoology', hindi: 'ज़ूलॉजी', categories: ['MJC-16', 'MIC-10'] }
+            ]
         }
     },
     {
@@ -210,12 +249,30 @@ const PYQ_CoursesStructure = [
         courseName: 'B.Ed. (Teaching)', hindi: 'बी.एड.', durationType: 'Year', durationCount: 2,
         durations: {
             'Year 1': [
-                { subjectName: 'Childhood & Growing Up', hindi: 'बाल्यावस्था', categories: ['Paper 1', 'Paper 2', 'Practicum'] },
-                { subjectName: 'Contemporary India', hindi: 'समकालीन भारत', categories: ['None'] },
-                { subjectName: 'Learning & Teaching', hindi: 'सीखना और पढ़ाना', categories: ['Paper 1', 'Paper 2'] }
+                { subjectName: 'Childhood & Growing Up', hindi: 'बाल्यावस्था', categories: [] },
+                { subjectName: 'Contemporary India and Education', hindi: 'समकालीन भारत और शिक्षा', categories: ['None'] },
+                { subjectName: 'Learning and Teaching', hindi: 'सीखना और पढ़ाना', categories: ['None'] },
+                { subjectName: 'Language across the Curriculum', hindi: 'बहुत से पाठ्यक्रमों में भाषा', categories: ['None'] },
+                { subjectName: 'Understanding Disciplines and Subjects', hindi: 'विषयों और विज्ञानों की समझ', categories: ['None'] },
+                { subjectName: 'Gender, School and Society', hindi: 'लिंग, स्कूल और समाज', categories: ['None'] },
+                { subjectName: 'Pedagogy of School Subject Part-I', hindi: 'स्कूल विषय की पीडागॉजी हिस्सा-I', categories: ['Hindi', 'Maithili', 'English', 'Sanskrit', 'Urdu', 'Home Science', 'Social Science','Physical Science', 'Commerce', 'Computer Science'] },
+                { subjectName: 'Reading and Reflecting on Texts', hindi: 'पाठ्यों पर पढ़ना और प्रतिबद्ध होना', categories: ['None'] },
+                { subjectName: 'Drama and Art in Education', hindi: 'शिक्षा में नाटक और कला', categories: ['None'] },
+                { subjectName: 'Critical Understanding of ICT', hindi: 'ICT की समझ', categories: ['None'] },
+
+
             ],
             'Year 2': [
-                { subjectName: 'Assessment for Learning', hindi: 'सीखने का आकलन', categories: ['None'] }
+                { subjectName: 'Pedagogy of School Subject Part-II', hindi: 'स्कूल विषय की पीडागॉजी हिस्सा-II', categories: ['None'] },
+                { subjectName: 'Knowledge and Curriculum', hindi: 'ज्ञान और पाठ्यक्रम', categories: ['None'] },
+                { subjectName: 'Assessment for Learning', hindi: 'सीखने के लिए आकलन', categories: ['None'] },
+                { subjectName: 'Creating an Inclusive School', hindi: 'एक समावेशी स्कूल का निर्माण', categories: ['None'] },
+                { subjectName: 'Optional Course', hindi: 'वैकल्पिक पाठ्यक्रम', categories: ['None'] },
+                { subjectName: 'Understanding the Self', hindi: 'खुद की समझ', categories: ['None'] },
+                { subjectName: 'Practice Teaching', hindi: 'अभ्यास पढ़ाना', categories: ['None'] },
+                
+
+
             ]
         }
     },
@@ -286,8 +343,8 @@ const Syllabus_CoursesStructure = [
     {
         courseName: 'B.Ed. (Teaching)', hindi: 'बी.एड.',
         subjects: [
-            { subjectName: 'Childhood & Growing Up', hindi: 'बाल्यावस्था', categories: [] },
-            { subjectName: 'Contemporary India', hindi: 'समकालीन भारत', categories: [] }
+            { subjectName: '2-Year B.Ed. All Syllabus', hindi: '2-वर्षीय बी.एड. सभी सिलेबस', categories: [] },
+            
         ]
     }
     // ... बाकि कोर्सेज ऐसे ही लिखें
@@ -338,11 +395,15 @@ function insertPDF(type, courseName, duration, subject, category, pdfArray) {
 // ==========================================================
 
 
+
+// -------------- 1st semester B.A. (Arts) PDFs --------------------
+// ==================================================================
+
 //    ---- B.A. (Arts) English Pdfs ----
 //   ==========================================
 
 insertPDF("PYQ", "B.A. (Arts)", "Semester 3", "English", "MJC-4", [
-    { title: "English MJC-4 (2024-28)", year: "2024-28", url: "pyq/B.A/English/English MJC-4 2024-28.pdf" }
+    { title: "English MJC-4 (2024-28)", year: "2024-28", url: "pyq/B.A/English/english_mjc_4_sem_3_2024-28.pdf" }
 ]);
 
 
@@ -352,17 +413,144 @@ insertPDF("Notes", "B.A. (Arts)", "Semester 1", "History", "Major", [
     { title: "History Major Unit 1", year: "Latest", url: "pdfs/hist_m1.pdf" }
 ]);
 
+
+// ----------- B.A. (Arts) Political Science PDFs -----------
+
+// C:\Users\amits\Coding Files\LNMU PYQ wesite\Cloud LNMU Website Modification\pyq\B.A\Political Science\political_science_mic_1_sem_1(2025-29).pdf
+insertPDF("PYQ", "B.A. (Arts)", "Semester 1", "Political Science", "MIC-1", [
+    { title: "Political Science MIC-1 PYQ 2025-29", year: "2025-29", url: "pyq/B.A/Political Science/political_science_mic_1_sem_1(2025-29).pdf" }
+]);
+
+
+// ----------- B.A. (Arts) Hindi PDFs -----------
+
+// C:\Users\amits\Coding Files\LNMU PYQ wesite\Cloud LNMU Website Modification\pyq\B.A\Hindi\hindi_mdc_sem_1(2025-29).pdf
+insertPDF("PYQ", "B.A. (Arts)", "Semester 1", "Hindi", "MDC", [
+    { title: "Hindi MDC PYQ 2025-29", year: "2025-29", url: "pyq/B.A/Hindi/hindi_mdc_sem_1(2025-29).pdf" }
+]);
+
+//C:\Users\amits\Coding Files\LNMU PYQ wesite\Cloud LNMU Website Modification\pyq\B.A\Hindi\hindi_sem_1_aec(2025-29).pdf
 insertPDF("PYQ", "B.A. (Arts)", "Semester 1", "Hindi", "AEC", [
-    { title: "Hindi AEC PYQ 2025-29", year: "2025-29", url: "pyq/B.A/Hindi/Hindi sem-1 AEC 2025-29.pdf" }
+    { title: "Hindi AEC PYQ 2025-29", year: "2025-29", url: "pyq/B.A/Hindi/hindi_sem_1_aec(2025-29).pdf" }
 ]);
 
-insertPDF("PYQ", "B.A. (Arts)", "Semester 1", "Basic IT Tools", "None", [
-    { title: "Basic IT Tools PYQ 2025-29", year: "2025-29", url: "pyq/B.A/Basic IT Tools/Basics IT Tools sem-1 SEC 2025-29.pdf" }
+
+
+
+// ============================================================
+//-------------- 2nd Semester Pdfs ----------------------------
+// ============================================================
+
+//  ---- B.A. (Arts) English Pdfs ----
+insertPDF("PYQ", "B.A. (Arts)", "Semester 2", "English", "MJC-4", [
+    { title: "English MJC-4 PYQ 2025-29", year: "2025-29", url: "pyq/B.A/English/english_mjc_4_sem_2_2025-29.pdf" }
 ]);
 
+//  ----- B.A. (Arts) Political Science Pdfs ----
+
+// C:\Users\amits\Coding Files\LNMU PYQ wesite\Cloud LNMU Website Modification\pyq\B.A\Political Science\political_science_mic_2_sem_2(2025-29).pdf
+insertPDF("PYQ", "B.A. (Arts)", "Semester 2", "Political Science", "MIC-2", [
+    { title: "Political Science MIC-2 PYQ 2025-29", year: "2025-29", url: "pyq/B.A/Political Science/political_science_mic_2_sem_2(2025-29).pdf" }
+]);
+
+// ------ B.A. (Arts) Economics Pdfs ----
+// C:\Users\amits\Coding Files\LNMU PYQ wesite\Cloud LNMU Website Modification\pyq\B.A\Economics\economics_mjc_2_sem-2(2025-29).pdf
+insertPDF("PYQ", "B.A. (Arts)", "Semester 2", "Economics", "MJC-2", [
+    { title: "Economics MJC-2 PYQ 2025-29", year: "2025-29", url: "pyq/B.A/Economics/economics_mjc_2_sem-2(2025-29).pdf" }
+]);
+
+
+
+// ---------- B.A. (Arts) Hindi Pdfs -----------
+// C:\Users\amits\Coding Files\LNMU PYQ wesite\Cloud LNMU Website Modification\pyq\B.A\Hindi\hindi_mdc_sem_2(2025-29).pdf
+insertPDF("PYQ", "B.A. (Arts)", "Semester 2", "Hindi", "MDC", [
+    { title: "Hindi MDC PYQ 2025-29", year: "2025-29", url: "pyq/B.A/Hindi/hindi_mdc_sem_2(2025-29).pdf" }
+]);
+
+//C:\Users\amits\Coding Files\LNMU PYQ wesite\Cloud LNMU Website Modification\pyq\B.A\Hindi\hindi_mjc_2_sem_2(2025-29).pdf
+insertPDF("PYQ", "B.A. (Arts)", "Semester 2", "Hindi", "MJC-2", [
+    { title: "Hindi MJC-2 PYQ 2025-29", year: "2025-29", url: "pyq/B.A/Hindi/hindi_mjc_2_sem_2(2025-29).pdf" }
+]);
+
+
+
+//  --------------- 3rd Semester B.A. (Arts) PDFs --------------------
+// ==========================================================
+
+// ----------- B.A. (Arts) English PDFs -----------
+// C:\Users\amits\Coding Files\LNMU PYQ wesite\Cloud LNMU Website Modification\pyq\B.A\English\english_mjc_4_sem_3(2024-28).pdf
+insertPDF("PYQ", "B.A. (Arts)", "Semester 3", "English", "MJC-4", [
+    { title: "English MJC-4 PYQ 2024-28", year: "2024-28", url: "pyq/B.A/English/english_mjc_4_sem_3(2024-28).pdf" }
+]);
+
+
+
+
+
+//  =========================================================
+//       ---- common subjects for all courses ----
+//  =========================================================
+
+
+// ------------------ Swach Bharat PDFs 1st Semester --------------------
+
+// C:\Users\amits\Coding Files\LNMU PYQ wesite\Cloud LNMU Website Modification\pyq\B.A\Swach Bharat\swaksh_bharat_vac_sem_1(2025-29).pdf
 insertPDF("PYQ", "B.A. (Arts)", "Semester 1", "Swach Bharat", "None", [
-    { title: "Swach Bharat PYQ 2025-29", year: "2025-29", url: "pyq/B.A/Swach-Bharat/Swach Bharat sem-1 VAC 2026.pdf" }
+    { title: "Swach Bharat PYQ 2025-29", year: "2025-29", url: "pyq/B.A/Swach Bharat/swaksh_bharat_vac_sem_1(2025-29).pdf" }
 ]);
+
+
+
+// ------------------ Basic IT Tools PDFs 1st Semester --------------------
+
+// C:\Users\amits\Coding Files\LNMU PYQ wesite\Cloud LNMU Website Modification\pyq\B.A\Basic IT Tools\basics_IT_tools_sem_1_sec(2025-29).pdf
+insertPDF("PYQ", "B.A. (Arts)", "Semester 1", "Basic IT Tools", "None", [
+    { title: "Basic IT Tools PYQ 2025-29", year: "2025-29", url: "pyq/B.A/Basic IT Tools/basics_IT_tools_sem_1_sec(2025-29).pdf" }
+]);
+
+
+
+
+
+
+// ------------ semester B.A. (Arts) PDFs  2nd Semester --------------------
+
+// // Final LNMU Resources Website\pyq\Common\Environmental Science\environmental-science_arts_sem-2_2025-29_compressed.pdf
+// insertPDF("PYQ", "B.A. (Arts)", "Semester 2", "Environmental Science", "None", [
+//     { title: "Environmental Science PYQ 2025-29", year: "2025-29", url: "pyq/Common/Environmental Science/environmental-science_arts_sem-2_2025-29_compressed.pdf" }
+// ]);
+
+// ------------------ Environmental Science PDFs 2nd Semester --------------------
+// C:\Users\amits\Coding Files\LNMU PYQ wesite\Cloud LNMU Website Modification\pyq\Common\Environmental Science\environmental_science_sem_2(2025-29).pdf
+insertPDF("PYQ", "B.A. (Arts)", "Semester 2", "Environmental Science", "None", [
+    { title: "Environmental Science PYQ 2025-29", year: "2025-29", url: "pyq/Common/Environmental Science/environmental_science_sem_2(2025-29).pdf" }
+]);
+
+
+
+// ------------------ Constitutional Values & Fundamental Duties PDFs 2nd Semester --------------------
+// C:\Users\amits\Coding Files\LNMU PYQ wesite\Cloud LNMU Website Modification\pyq\Common\Constitutional Values & Fundamental Duties\constitutional_values_and_fundamental_duties_common_vac_sem2(2025-29).pdf
+insertPDF("PYQ", "B.A. (Arts)", "Semester 2", "Constitutional Values & Fundamental Duties", "None", [
+    { title: "Constitutional Values & Fundamental Duties PYQ 2025-29", year: "2025-29", url: "pyq/Common/Constitutional Values & Fundamental Duties/constitutional_values_and_fundamental_duties_common_vac_sem2(2025-29).pdf" }
+]);
+
+
+
+// -------------------- Personality Development & Communications Notes PDFs 2nd Semester --------------------
+// C:\Users\amits\Coding Files\LNMU PYQ wesite\Cloud LNMU Website Modification\pyq\Common\Personality Development And Communications\personality_development_and_communications_sec_sem_2(2025-29).pdf
+insertPDF("PYQ", "B.A. (Arts)", "Semester 2", "Personality Development & Communications", "None", [
+    { title: "Personality Development And Communications Notes 2025-29", year: "2025-29", url: "pyq/Common/Personality Development And Communications/personality_development_and_communications_sec_sem_2(2025-29).pdf" }
+]);
+
+
+// ------------------- NCC PDFs 4th Semester --------------------
+// C:\Users\amits\Coding Files\LNMU PYQ wesite\Cloud LNMU Website Modification\pyq\Common\NCC\ncc_aec_sem_4(2024-28).pdf
+insertPDF("PYQ", "B.Sc. (Science)", "Semester 4", "NCC", "None", [
+    { title: "NCC PYQ 2024-28", year: "2024-28", url: "pyq/Common/NCC/ncc_aec_sem_4(2024-28).pdf" }
+]);
+
+
+
 
 // --- B.Ed. (Teaching) PDFs ---
 insertPDF("PYQ", "B.Ed. (Teaching)", "Year 1", "Childhood & Growing Up", "Paper 1", [
@@ -441,31 +629,99 @@ insertPDF("Syllabus", "B.A. (Arts)", "None", "Sanskrit", "None", [
 
 
 
+// ========================================================================================
+//           All PYQ, Syllabus, Notes PDFs are now mapped in Here (data.js) file
+// ========================================================================================
+
 
 // ------------------------------------------
 //        B.Sc. (Science) Syllabus PDFs
 // ------------------------------------------
 
+
+//  ---------------------------------------
+//      Physics PDFs
+//  ---------------------------------------
 insertPDF("Syllabus", "B.Sc. (Science)", "None", "Physics", "None", [
     { title: "B.Sc. Physics Complete Syllabus", year: "2023 Version", url: "Syllabus/BSC/Physics.pdf" }
 ]);
 
+
+// ---------------------------------------
+//     Mathematics PDFs
+// ---------------------------------------
 insertPDF("Syllabus", "B.Sc. (Science)", "None", "Mathematics", "None", [
     { title: "B.Sc. Mathematics Complete Syllabus", year: "2023 Version", url: "Syllabus/BSC/Mathematics.pdf" }
 ]);
 
+
+// ---------------------------------------
+//     Chemistry PDFs
+// ---------------------------------------
 insertPDF("Syllabus", "B.Sc. (Science)", "None", "Chemistry", "None", [
     { title: "B.Sc. Chemistry Complete Syllabus", year: "2023 Version", url: "Syllabus/BSC/Chemistry.pdf" }
 ]);
 
+
+// ---------------------------------------
+//     Botany PDFs
+// ---------------------------------------
 insertPDF("Syllabus", "B.Sc. (Science)", "None", "Botany", "None", [
     { title: "B.Sc. Botany Complete Syllabus", year: "2023 Version", url: "Syllabus/BSC/Botany.pdf" }
 ]);
 
+// C:\Users\amits\Coding Files\LNMU PYQ wesite\Cloud LNMU Website Modification\pyq\B.Sc\Botany\botany_mic_4_sem_4(2024-28).pdf
+insertPDF("PYQ", "B.Sc. (Science)", "Semester 4", "Botany", "Minor", [
+    { title: "Botany MIC-4 PYQ 2024-28", year: "2024-28", url: "pyq/B.Sc/Botany/botany_mic_4_sem_4(2024-28).pdf" }
+]);
+
+
+// ---------------------------------------
+//     Zoology PDFs
+// ---------------------------------------
 insertPDF("Syllabus", "B.Sc. (Science)", "None", "Zoology", "None", [
     { title: "B.Sc. Zoology Complete Syllabus", year: "2023 Version", url: "Syllabus/BSC/Zoology.pdf" }
 ]);
 
+// C:\Users\amits\Coding Files\LNMU PYQ wesite\Cloud LNMU Website Modification\pyq\B.Sc\Zoology\zoology_mjc_5_sem_4(2024-28).pdf
+insertPDF("PYQ", "B.Sc. (Science)", "Semester 4", "Zoology", "Major", [
+    { title: "Zoology MJC-5 PYQ 2024-28", year: "2024-28", url: "pyq/B.Sc/Zoology/zoology_mjc_5_sem_4(2024-28).pdf" }
+]);
+
+
+
+// -----------------------------------------------------------------------------
+//                 B.Sc. (Science) UG PYQ PDFs
+// -----------------------------------------------------------------------------
+
+
+// ---------------------------------------------
+//        Botany PYQ PDFs
+// ---------------------------------------------
+
+
+// ---------- Semester 4 Botany PYQ PDFs -----------
+
+// C:\Users\amits\Coding Files\LNMU PYQ wesite\Cloud LNMU Website Modification\pyq\B.Sc\Botany\botany_mic_4_sem_4(2024-28).pdf
+insertPDF("PYQ", "B.Sc. (Science)", "Semester 4", "Botany", "MIC-4", [
+    { title: "Botany Minor-IV PYQ 2024-28", year: "2024-28", url: "pyq/B.Sc/Botany/botany_mic_4_sem_4(2024-28).pdf" }
+]);
+
+
+
+// ----------- Semester 4 Zoology PYQ PDFs -----------
+// C:\Users\amits\Coding Files\LNMU PYQ wesite\Cloud LNMU Website Modification\pyq\B.Sc\Zoology\zoology_mjc_5_sem_4(2024-28).pdf
+insertPDF("PYQ", "B.Sc. (Science)", "Semester 4", "Zoology", "MJC-5", [
+    { title: "Zoology Major-V PYQ 2024-28", year: "2024-28", url: "pyq/B.Sc/Zoology/zoology_mjc_5_sem_4(2024-28).pdf" }
+]);
+
+
+// ---------- Semester 5 Botany PYQ PDFs -----------
+
+//C:\Users\amits\Coding Files\LNMU PYQ wesite\Cloud LNMU Website Modification\pyq\B.Sc\Botany\botany_mic-6_sem-5(2023-27).pdf
+insertPDF("PYQ", "B.Sc. (Science)", "Semester 5", "Botany", "MIC-6", [
+    { title: "Botany Minor-VI PYQ 2023-27", year: "2023-27", url: "pyq/B.Sc/Botany/botany_mic-6_sem-5(2023-27).pdf" }
+]);
 
 
 // ---------------------------------------------
@@ -482,4 +738,86 @@ insertPDF("Syllabus", "B.Com. (Commerce)", "None", "Human Resource Management (H
 
 insertPDF("Syllabus", "B.Com. (Commerce)", "None", "Accounting & Finance", "None", [
     { title: "B.Com. Accounting & Finance Complete Syllabus", year: "2023 Version", url: "Syllabus/BCOM/Accounting & Finance.pdf" }
+]);
+
+
+
+
+// ----------------------------------------------------
+//       B.Ed. (Teaching) Syllabus PDFs
+// ----------------------------------------------------
+// C:\Users\amits\Coding Files\LNMU PYQ wesite\Cloud LNMU Website Modification\Syllabus\BED\2_year_B.Ed.Syllabus.pdf
+insertPDF("Syllabus", "B.Ed. (Teaching)", "None", "2-Year B.Ed. All Syllabus", "None", [
+    { title: "2-Year B.Ed. Full Syllabus", year: "2023 Version", url: "Syllabus/BED/2_year_B.Ed.Syllabus.pdf" }
+]);
+
+
+
+
+
+
+
+// ###########################################################################
+// ================== B.Ed. (Teaching) PYQ PDFs ==============================
+// ###########################################################################
+
+//  ----------------- B.Ed. (Teaching) Year 1 PDFs -----------------
+
+
+// ------------------ Childhood & Growing Up PDFs 1st Year --------------------
+// C:\Users\amits\Coding Files\LNMU PYQ wesite\Cloud LNMU Website Modification\pyq\B.ED\Childhood and Growing Up\childhood_and_growing_up_course_1_1st_year(2024-26).pdf
+insertPDF("PYQ", "B.Ed. (Teaching)", "Year 1", "Childhood & Growing Up", "None", [
+    { title: "Childhood & Growing Up PYQ 2024-26", year: "2024-26", url: "pyq/B.ED/Childhood and Growing Up/childhood_and_growing_up_course_1_1st_year(2024-26).pdf" }
+]);
+
+
+
+// ------------------ Contemporary India and Education PDFs 1st Year --------------------
+// C:\Users\amits\Coding Files\LNMU PYQ wesite\Cloud LNMU Website Modification\pyq\B.ED\Contemporary India and Education\contemporary_indian_and_education_course_2_1st_year_session(2024-26).pdf
+insertPDF("PYQ", "B.Ed. (Teaching)", "Year 1", "Contemporary India and Education", "None", [
+    { title: "Contemporary India and Education PYQ 2024-26", year: "2024-26", url: "pyq/B.ED/Contemporary India and Education/contemporary_indian_and_education_course_2_1st_year_session(2024-26).pdf" }
+]);
+
+
+// ------------------ Learning and Teaching PDFs 1st Year --------------------
+// C:\Users\amits\Coding Files\LNMU PYQ wesite\Cloud LNMU Website Modification\pyq\B.ED\Learning and Teaching\learning_and_teaching_course_3_1st_year_session(2024-26).pdf
+insertPDF("PYQ", "B.Ed. (Teaching)", "Year 1", "Learning and Teaching", "None", [
+    { title: "Learning and Teaching PYQ 2024-26", year: "2024-26", url: "pyq/B.ED/Learning and Teaching/learning_and_teaching_course_3_1st_year_session(2024-26).pdf" }
+]);
+
+
+
+// ------------------ Language across the Curriculum PDFs 1st Year --------------------
+// C:\Users\amits\Coding Files\LNMU PYQ wesite\Cloud LNMU Website Modification\pyq\B.ED\Language across the Curriculum\language_across_the_curriculum_course_4_1st_year_session(2024-26).pdf
+insertPDF("PYQ", "B.Ed. (Teaching)", "Year 1", "Language across the Curriculum", "None", [
+    { title: "Language across the Curriculum PYQ 2024-26", year: "2024-26", url: "pyq/B.ED/Language across the Curriculum/language_across_the_curriculum_course_4_1st_year_session(2024-26).pdf" }
+]);
+
+
+// ------------------ Understanding Disciplines and Subjects PDFs 1st Year --------------------
+// C:\Users\amits\Coding Files\LNMU PYQ wesite\Cloud LNMU Website Modification\pyq\B.ED\Understanding Disciplines and Subjects\understanding_disciplines_and_subject_course_5_1st_year_session(2024-26).pdf
+insertPDF("PYQ", "B.Ed. (Teaching)", "Year 1", "Understanding Disciplines and Subjects", "None", [
+    { title: "Understanding Disciplines and Subjects PYQ 2024-26", year: "2024-26", url: "pyq/B.ED/Understanding Disciplines and Subjects/understanding_disciplines_and_subject_course_5_1st_year_session(2024-26).pdf" }
+]);
+
+
+// ------------------ Gender, School and Society PDFs 1st Year --------------------
+// C:\Users\amits\Coding Files\LNMU PYQ wesite\Cloud LNMU Website Modification\pyq\B.ED\Gender, School and Society\gender_school_and_society_course_6_1st_year_session(2024-26).pdf
+insertPDF("PYQ", "B.Ed. (Teaching)", "Year 1", "Gender, School and Society", "None", [
+    { title: "Gender, School and Society PYQ 2024-26", year: "2024-26", url: "pyq/B.ED/Gender, School and Society/gender_school_and_society_course_6_1st_year_session(2024-26).pdf" }
+]);
+
+
+
+// ------------------ Pedagogy of School Subject-Part-I English PDFs 1st Year --------------------
+// C:\Users\amits\Coding Files\LNMU PYQ wesite\Cloud LNMU Website Modification\pyq\B.ED\Pedagogy of School Subject-Part-I\pedagogy_of_school_subject_part_1_course_7a_1st_year_english_session(2024-26).pdf
+insertPDF("PYQ", "B.Ed. (Teaching)", "Year 1", "Pedagogy of School Subject Part-I", "English", [
+    { title: "Pedagogy of School Subject-Part-I English PYQ 2024-26", year: "2024-26", url: "pyq/B.ED/Pedagogy of School Subject-Part-I/pedagogy_of_school_subject_part_1_course_7a_1st_year_english_session(2024-26).pdf" }
+]);
+
+
+// ------------------ Pedagogy of School Subject-Part-I Hindi PDFs 1st Year --------------------
+// C:\Users\amits\Coding Files\LNMU PYQ wesite\Cloud LNMU Website Modification\pyq\B.ED\Pedagogy of School Subject-Part-I\pedagogy_of_school_subject_part_1_course_7a_1st_year_hindi_session(2024-26).pdf
+insertPDF("PYQ", "B.Ed. (Teaching)", "Year 1", "Pedagogy of School Subject Part-I", "Hindi", [
+    { title: "Pedagogy of School Subject-Part-I Hindi PYQ 2024-26", year: "2024-26", url: "pyq/B.ED/Pedagogy of School Subject-Part-I/pedagogy_of_school_subject_part_1_course_7a_1st_year_hindi_session(2024-26).pdf" },
 ]);
