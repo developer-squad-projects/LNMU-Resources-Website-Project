@@ -49,7 +49,7 @@ const PYQ_CoursesStructure = [
                 { subjectName: 'Sociology', hindi: 'समाजशास्त्र', categories: ['MJC-4', 'MIC-4', 'MDC', 'AEC', 'SEC', 'VAC'] },
                 { subjectName: 'Psychology', hindi: 'मनोविज्ञान', categories: ['MJC-4', 'MIC-4', 'MDC', 'AEC', 'SEC', 'VAC'] },
                 { subjectName: 'Hindi', hindi: 'हिंदी', categories: ['MJC-4', 'MIC-4', 'MDC', 'AEC', 'Major', 'Minor', 'SEC', 'VAC'] },
-                { subjectName: 'English', hindi: 'अंग्रेज़ी', categories: ['MJC-4', 'MIC-4', 'MDC', 'AEC', 'SEC', 'VAC'] }
+                { subjectName: 'English', hindi: 'अंग्रेज़ी', categories: ['MJC-5', 'MJC-6', 'MJC-7', 'MIC-4', 'MDC'] }
             ],
             'Semester 5': [
                 { subjectName: 'History', hindi: 'इतिहास', categories: ['MJC-8', 'MJC-9', 'MIC-5', 'MIC-6', 'MDC', 'VAC', 'AEC','SEC'] },
@@ -104,7 +104,10 @@ const PYQ_CoursesStructure = [
                 { subjectName: 'Chemistry', hindi: 'रसायन विज्ञान', categories: ['MJC-2', 'MIC-2'] },
                 { subjectName: 'Mathematics', hindi: 'गणित', categories: ['MJC-2', 'MIC-2'] },
                 { subjectName: 'Physics', hindi: 'भौतिकी', categories: ['MJC-2', 'MIC-2'] },
-                { subjectName: 'Zoology', hindi: 'ज़ूलॉजी', categories: ['MJC-2', 'MIC-2'] }
+                { subjectName: 'Zoology', hindi: 'ज़ूलॉजी', categories: ['MJC-2', 'MIC-2'] },
+                { subjectName: 'Environmental Science', hindi: 'पर्यावरण विज्ञान', categories: ['None'] },
+                { subjectName: 'Constitutional Values & Fundamental Duties', hindi: 'संविधानिक मूल्य और मौलिक कर्तव्य', categories: ['None'] },
+                { subjectName: 'Personality Development & Communications', hindi: 'व्यक्तित्व विकास और संचार', categories: ['None'] }
             ],
             'Semester 3': [
                 { subjectName: 'Botany', hindi: 'बाटनी', categories: ['MJC-3', 'MJC-4', 'MIC-3'] },
@@ -170,7 +173,10 @@ const PYQ_CoursesStructure = [
                 { subjectName: 'Advertising Management', hindi: 'विज्ञापन प्रबंधन', categories: ['Marketing (Minor)'] },
                 { subjectName: 'Training & Development', hindi: 'प्रशिक्षण और विकास', categories: ['HRM (Minor)'] },
                 { subjectName: 'Environmental Science', hindi: 'पर्यावरण विज्ञान', categories: ['AEC'] },
-                { subjectName: 'Basket course', hindi: 'बैकेट कोर्स', categories: ['MDC', 'SEC', 'VAC'] }
+                { subjectName: 'Basket course', hindi: 'बैकेट कोर्स', categories: ['MDC', 'SEC', 'VAC'] },
+                { subjectName: 'Environmental Science', hindi: 'पर्यावरण विज्ञान', categories: ['None'] },
+                { subjectName: 'Constitutional Values & Fundamental Duties', hindi: 'संविधानिक मूल्य और मौलिक कर्तव्य', categories: ['None'] },
+                { subjectName: 'Personality Development & Communications', hindi: 'व्यक्तित्व विकास और संचार', categories: ['None'] }
             ],
             'Semester 3': [
                 { subjectName: 'Business Law', hindi: 'व्यवसायिक कानून', categories: ['Accounting & Finance (Major)'] },
@@ -425,8 +431,13 @@ insertPDF("PYQ", "B.A. (Arts)", "Semester 1", "Political Science", "MIC-1", [
 // ----------- B.A. (Arts) Hindi PDFs -----------
 
 // C:\Users\amits\Coding Files\LNMU PYQ wesite\Cloud LNMU Website Modification\pyq\B.A\Hindi\hindi_mdc_sem_1(2025-29).pdf
-insertPDF("PYQ", "B.A. (Arts)", "Semester 1", "Hindi", "MDC", [
-    { title: "Hindi MDC PYQ 2025-29", year: "2025-29", url: "pyq/B.A/Hindi/hindi_mdc_sem_1(2025-29).pdf" }
+// insertPDF("PYQ", "B.A. (Arts)", "Semester 1", "Hindi", "MDC", [
+//     { title: "Hindi MDC PYQ 2025-29", year: "2025-29", url: "pyq/B.A/Hindi/hindi_mdc_sem_1(2025-29).pdf" }
+// ]);
+
+// C:\Users\amits\Coding Files\LNMU PYQ wesite\Cloud LNMU Website Modification\pyq\B.A\Hindi\hindi_mdc_sem_1(2025-29).pdf
+insertPDF("PYQ", "B.A. (Arts)", "Semester 1", "Hindi", "MDC",[
+    {title: "Hindi MDC PYQ 2025-29", year: "2025-29", url: "pyq/B.A/Hindi/hindi_mdc_sem_1(2025-29).pdf"}
 ]);
 
 //C:\Users\amits\Coding Files\LNMU PYQ wesite\Cloud LNMU Website Modification\pyq\B.A\Hindi\hindi_sem_1_aec(2025-29).pdf
@@ -434,6 +445,12 @@ insertPDF("PYQ", "B.A. (Arts)", "Semester 1", "Hindi", "AEC", [
     { title: "Hindi AEC PYQ 2025-29", year: "2025-29", url: "pyq/B.A/Hindi/hindi_sem_1_aec(2025-29).pdf" }
 ]);
 
+// ------------ B.A. (Arts) Economics Pdfs -----------
+
+// C:\Users\amits\Coding Files\LNMU PYQ wesite\Cloud LNMU Website Modification\pyq\B.A\Economics\economics_mjc_1_sem_1(2025-29).pdf
+insertPDF("PYQ", "B.A. (Arts)", "Semester 1", "Economics", "MJC-1", [
+    { title: "Economics MJC-1 PYQ 2025-29", year: "2025-29", url: "pyq/B.A/Economics/economics_mjc_1_sem_1(2025-29).pdf" }
+]);
 
 
 
@@ -475,12 +492,25 @@ insertPDF("PYQ", "B.A. (Arts)", "Semester 2", "Hindi", "MJC-2", [
 
 
 //  --------------- 3rd Semester B.A. (Arts) PDFs --------------------
-// ==========================================================
+// ===================================================================
 
 // ----------- B.A. (Arts) English PDFs -----------
 // C:\Users\amits\Coding Files\LNMU PYQ wesite\Cloud LNMU Website Modification\pyq\B.A\English\english_mjc_4_sem_3(2024-28).pdf
 insertPDF("PYQ", "B.A. (Arts)", "Semester 3", "English", "MJC-4", [
     { title: "English MJC-4 PYQ 2024-28", year: "2024-28", url: "pyq/B.A/English/english_mjc_4_sem_3(2024-28).pdf" }
+]);
+
+
+
+
+
+//  --------------- 4th Semester B.A. (Arts) PDFs --------------------
+// ===================================================================
+
+// ----------- B.A. (Arts) English PDFs -----------
+// C:\Users\amits\Coding Files\LNMU PYQ wesite\Cloud LNMU Website Modification\pyq\B.A\English\english_mjc_7_sem_4(2024-28).pdf
+insertPDF("PYQ", "B.A. (Arts)", "Semester 4", "English", "MJC-7", [
+    { title: "English MJC-7 PYQ 2024-28", year: "2024-28", url: "pyq/B.A/English/english_mjc_7_sem_4(2024-28).pdf" }
 ]);
 
 
