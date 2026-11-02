@@ -47,19 +47,57 @@ window.addEventListener('popstate', (event) => {
     }
 });
 
+//--------  ## Old code of showPage function (scrolls to top on back)  ----------------
+// function showPage(pageId, pushHistory = true) {
+//     document.querySelectorAll('.page').forEach(page => page.classList.remove('active'));
+//     document.getElementById(pageId).classList.add('active');
+//     window.scrollTo(0, 0); 
+
+//     sessionStorage.setItem('savedState', JSON.stringify(state));
+//     sessionStorage.setItem('savedPage', pageId);
+
+//     if (pushHistory) {
+//         const currentState = JSON.parse(JSON.stringify(state));
+//         history.pushState({ pageId: pageId, appState: currentState }, '', `#${pageId}`);
+//     }
+// }
+
+// New code of showPage function with jis page ke section se current page pe aaye ho,
+// back karne par us page ke usi section pe wapas le jaayega na ki us page ke top section pe.
+// Isme humne sessionStorage ka use kiya hai scroll position ko save karne ke liye.
+// Jab user back button dabata hai, to hum us page ke saved scroll position par wapas le jaate hain.
 function showPage(pageId, pushHistory = true) {
+    // 1. Current page chhodne se pehle uska scroll position save karein
+    const activePage = document.querySelector('.page.active');
+    if (activePage) {
+        sessionStorage.setItem('scroll_' + activePage.id, window.scrollY);
+    }
+
+    // 2. Sabhi pages ko hide karke naya page show karein
     document.querySelectorAll('.page').forEach(page => page.classList.remove('active'));
     document.getElementById(pageId).classList.add('active');
-    window.scrollTo(0, 0); 
 
+    // 3. Session aur History update karein
     sessionStorage.setItem('savedState', JSON.stringify(state));
     sessionStorage.setItem('savedPage', pageId);
 
+    // 4. Scroll aur History push logic
     if (pushHistory) {
+        // Agar naya click hai, to history add karein aur page top par rakhein
         const currentState = JSON.parse(JSON.stringify(state));
         history.pushState({ pageId: pageId, appState: currentState }, '', `#${pageId}`);
+        window.scrollTo(0, 0);
+    } else {
+        // Agar Back button dabaya hai, to purani scroll position par wapas layein
+        setTimeout(() => {
+            const savedScroll = sessionStorage.getItem('scroll_' + pageId);
+            window.scrollTo(0, savedScroll ? parseInt(savedScroll) : 0);
+        }, 50); // 50ms ka delay taaki list render hone ke baad scroll ho
     }
 }
+
+
+
 
 function goBack() {
     if (history.state && history.state.pageId !== 'home-page') history.back();
