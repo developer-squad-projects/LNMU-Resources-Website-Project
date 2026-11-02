@@ -49,7 +49,8 @@ const PYQ_CoursesStructure = [
                 { subjectName: 'Sociology', hindi: 'समाजशास्त्र', categories: ['MJC-4', 'MIC-4', 'MDC', 'AEC', 'SEC', 'VAC'] },
                 { subjectName: 'Psychology', hindi: 'मनोविज्ञान', categories: ['MJC-4', 'MIC-4', 'MDC', 'AEC', 'SEC', 'VAC'] },
                 { subjectName: 'Hindi', hindi: 'हिंदी', categories: ['MJC-4', 'MIC-4', 'MDC', 'AEC', 'Major', 'Minor', 'SEC', 'VAC'] },
-                { subjectName: 'English', hindi: 'अंग्रेज़ी', categories: ['MJC-5', 'MJC-6', 'MJC-7', 'MIC-4', 'MDC'] }
+                { subjectName: 'English', hindi: 'अंग्रेज़ी', categories: ['MJC-5', 'MJC-6', 'MJC-7', 'MIC-4', 'MDC'] },
+                { subjectName: 'NCC', hindi: 'एनसीसी', categories: ['None'] }
             ],
             'Semester 5': [
                 { subjectName: 'History', hindi: 'इतिहास', categories: ['MJC-8', 'MJC-9', 'MIC-5', 'MIC-6', 'MDC', 'VAC', 'AEC','SEC'] },
@@ -163,7 +164,10 @@ const PYQ_CoursesStructure = [
                 { subjectName: 'Principles & Functions of Marketing', hindi: 'विपणन के सिद्धांत', categories: ['Marketing (Minor)'] },
                 { subjectName: 'Fundamentals of HRM', hindi: 'मानव संसाधन प्रबंधन', categories: ['HRM (Minor)'] },
                 { subjectName: 'Basket course', hindi: 'बैकेट कोर्स', categories: ['MDC', 'VAC'] },
-                { subjectName: 'Modern Indian Language (MIL)', hindi: 'आधुनिक भारतीय भाषा', categories: ['AEC'] }
+                { subjectName: 'Modern Indian Language (MIL)', hindi: 'आधुनिक भारतीय भाषा', categories: ['AEC'] },
+                { subjectName: 'Environmental Studies', hindi: 'पर्यावरण अध्ययन', categories: ['None'] },
+                { subjectName: 'Swach Bharat', hindi: 'स्वच्छ भारत', categories: ['None'] },
+                { subjectName: 'Basic IT Tools', hindi: 'बेसिक आईटी टूल्स', categories: ['None'] }
             ],
             'Semester 2': [
                 { subjectName: 'Business Organization & Management', hindi: 'व्यवसाय संगठन', categories: ['Accounting & Finance (Major)', 'Accounting & Finance (Minor)'] },
@@ -172,11 +176,11 @@ const PYQ_CoursesStructure = [
                 { subjectName: 'Corporate Accounting', hindi: 'कॉर्पोरेट लेखांकन', categories: ['Accounting & Finance (Minor)'] },
                 { subjectName: 'Advertising Management', hindi: 'विज्ञापन प्रबंधन', categories: ['Marketing (Minor)'] },
                 { subjectName: 'Training & Development', hindi: 'प्रशिक्षण और विकास', categories: ['HRM (Minor)'] },
-                { subjectName: 'Environmental Science', hindi: 'पर्यावरण विज्ञान', categories: ['AEC'] },
                 { subjectName: 'Basket course', hindi: 'बैकेट कोर्स', categories: ['MDC', 'SEC', 'VAC'] },
                 { subjectName: 'Environmental Science', hindi: 'पर्यावरण विज्ञान', categories: ['None'] },
                 { subjectName: 'Constitutional Values & Fundamental Duties', hindi: 'संविधानिक मूल्य और मौलिक कर्तव्य', categories: ['None'] },
                 { subjectName: 'Personality Development & Communications', hindi: 'व्यक्तित्व विकास और संचार', categories: ['None'] }
+                
             ],
             'Semester 3': [
                 { subjectName: 'Business Law', hindi: 'व्यवसायिक कानून', categories: ['Accounting & Finance (Major)'] },
@@ -200,7 +204,8 @@ const PYQ_CoursesStructure = [
                 { subjectName: 'Industrial Relations', hindi: 'औद्योगिक संबंध', categories: ['HRM (Major)'] },
                 { subjectName: 'Management Accounting', hindi: 'प्रबंधन लेखांकन', categories: ['Accounting & Finance (Major)'] },
                 { subjectName: 'Consumer Behaviour', hindi: 'उपभोक्ता व्यवहार', categories: ['Marketing (Major)'] },
-                { subjectName: 'Basket course', hindi: 'बैकेट कोर्स', categories: ['AEC'] }
+                { subjectName: 'Basket course', hindi: 'बैकेट कोर्स', categories: ['AEC'] },
+                { subjectName: 'NCC', hindi: 'एनसीसी', categories: ['None'] }
             ],
             'Semester 5': [
                 { subjectName: 'Corporate Accounting', hindi: 'कॉर्पोरेट लेखांकन', categories: ['Accounting & Finance (Major)'] },
@@ -529,6 +534,13 @@ insertPDF("PYQ", "B.A. (Arts)", "Semester 1", "Swach Bharat", "None", [
     { title: "Swach Bharat PYQ 2025-29", year: "2025-29", url: "pyq/B.A/Swach Bharat/swaksh_bharat_vac_sem_1(2025-29).pdf" }
 ]);
 
+insertPDF("PYQ", "B.Sc. (Science)", "Semester 1", "Swach Bharat", "None", [
+    { title: "Swach Bharat PYQ 2025-29", year: "2025-29", url: "pyq/B.A/Swach Bharat/swaksh_bharat_vac_sem_1(2025-29).pdf" }
+]);
+
+insertPDF("PYQ", "B.Com. (Commerce)", "Semester 1", "Swach Bharat", "None", [
+    { title: "Swach Bharat PYQ 2025-29", year: "2025-29", url: "pyq/B.A/Swach Bharat/swaksh_bharat_vac_sem_1(2025-29).pdf" }
+]);
 
 
 // ------------------ Basic IT Tools PDFs 1st Semester --------------------
@@ -538,6 +550,13 @@ insertPDF("PYQ", "B.A. (Arts)", "Semester 1", "Basic IT Tools", "None", [
     { title: "Basic IT Tools PYQ 2025-29", year: "2025-29", url: "pyq/B.A/Basic IT Tools/basics_IT_tools_sem_1_sec(2025-29).pdf" }
 ]);
 
+insertPDF("PYQ", "B.Sc. (Science)", "Semester 1", "Basic IT Tools", "None", [
+    { title: "Basic IT Tools PYQ 2025-29", year: "2025-29", url: "pyq/B.A/Basic IT Tools/basics_IT_tools_sem_1_sec(2025-29).pdf" }
+]);
+
+insertPDF("PYQ", "B.Com. (Commerce)", "Semester 1", "Basic IT Tools", "None", [
+    { title: "Basic IT Tools PYQ 2025-29", year: "2025-29", url: "pyq/B.A/Basic IT Tools/basics_IT_tools_sem_1_sec(2025-29).pdf" }
+]);
 
 
 
@@ -556,11 +575,27 @@ insertPDF("PYQ", "B.A. (Arts)", "Semester 2", "Environmental Science", "None", [
     { title: "Environmental Science PYQ 2025-29", year: "2025-29", url: "pyq/Common/Environmental Science/environmental_science_sem_2(2025-29).pdf" }
 ]);
 
+insertPDF("PYQ", "B.Sc. (Science)", "Semester 2", "Environmental Science", "None", [
+    { title: "Environmental Science PYQ 2025-29", year: "2025-29", url: "pyq/Common/Environmental Science/environmental_science_sem_2(2025-29).pdf" }
+]);
+
+insertPDF("PYQ", "B.Com. (Commerce)", "Semester 2", "Environmental Science", "None", [
+    { title: "Environmental Science PYQ 2025-29", year: "2025-29", url: "pyq/Common/Environmental Science/environmental_science_sem_2(2025-29).pdf" }
+]);
+
 
 
 // ------------------ Constitutional Values & Fundamental Duties PDFs 2nd Semester --------------------
 // C:\Users\amits\Coding Files\LNMU PYQ wesite\Cloud LNMU Website Modification\pyq\Common\Constitutional Values & Fundamental Duties\constitutional_values_and_fundamental_duties_common_vac_sem2(2025-29).pdf
 insertPDF("PYQ", "B.A. (Arts)", "Semester 2", "Constitutional Values & Fundamental Duties", "None", [
+    { title: "Constitutional Values & Fundamental Duties PYQ 2025-29", year: "2025-29", url: "pyq/Common/Constitutional Values & Fundamental Duties/constitutional_values_and_fundamental_duties_common_vac_sem2(2025-29).pdf" }
+]);
+
+insertPDF("PYQ", "B.Sc. (Science)", "Semester 2", "Constitutional Values & Fundamental Duties", "None", [
+    { title: "Constitutional Values & Fundamental Duties PYQ 2025-29", year: "2025-29", url: "pyq/Common/Constitutional Values & Fundamental Duties/constitutional_values_and_fundamental_duties_common_vac_sem2(2025-29).pdf" }
+]);
+
+insertPDF("PYQ", "B.Com. (Commerce)", "Semester 2", "Constitutional Values & Fundamental Duties", "None", [
     { title: "Constitutional Values & Fundamental Duties PYQ 2025-29", year: "2025-29", url: "pyq/Common/Constitutional Values & Fundamental Duties/constitutional_values_and_fundamental_duties_common_vac_sem2(2025-29).pdf" }
 ]);
 
@@ -572,10 +607,26 @@ insertPDF("PYQ", "B.A. (Arts)", "Semester 2", "Personality Development & Communi
     { title: "Personality Development And Communications Notes 2025-29", year: "2025-29", url: "pyq/Common/Personality Development And Communications/personality_development_and_communications_sec_sem_2(2025-29).pdf" }
 ]);
 
+insertPDF("PYQ", "B.Sc. (Science)", "Semester 2", "Personality Development & Communications", "None", [
+    { title: "Personality Development And Communications Notes 2025-29", year: "2025-29", url: "pyq/Common/Personality Development And Communications/personality_development_and_communications_sec_sem_2(2025-29).pdf" }
+]);
+
+insertPDF("PYQ", "B.Com. (Commerce)", "Semester 2", "Personality Development & Communications", "None", [
+    { title: "Personality Development And Communications Notes 2025-29", year: "2025-29", url: "pyq/Common/Personality Development And Communications/personality_development_and_communications_sec_sem_2(2025-29).pdf" }
+]);
+
 
 // ------------------- NCC PDFs 4th Semester --------------------
 // C:\Users\amits\Coding Files\LNMU PYQ wesite\Cloud LNMU Website Modification\pyq\Common\NCC\ncc_aec_sem_4(2024-28).pdf
+insertPDF("PYQ", "B.A. (Arts)", "Semester 4", "NCC", "None", [
+    { title: "NCC PYQ 2024-28", year: "2024-28", url: "pyq/Common/NCC/ncc_aec_sem_4(2024-28).pdf" }
+]);
+
 insertPDF("PYQ", "B.Sc. (Science)", "Semester 4", "NCC", "None", [
+    { title: "NCC PYQ 2024-28", year: "2024-28", url: "pyq/Common/NCC/ncc_aec_sem_4(2024-28).pdf" }
+]);
+
+insertPDF("PYQ", "B.Com. (Commerce)", "Semester 4", "NCC", "None", [
     { title: "NCC PYQ 2024-28", year: "2024-28", url: "pyq/Common/NCC/ncc_aec_sem_4(2024-28).pdf" }
 ]);
 
