@@ -13,6 +13,7 @@ const PYQ_CoursesStructure = [
                 { subjectName: 'History', hindi: 'इतिहास', categories: ['MJC-1', 'MIC-1', 'MDC', 'AEC', 'Major'] },
                 { subjectName: 'Political Science', hindi: 'राजनीति विज्ञान', categories: ['MJC-1', 'MIC-1', 'MDC', 'AEC'] },
                 { subjectName: 'Economics', hindi: 'अर्थशास्त्र', categories: ['MJC-1', 'MIC-1', 'MDC', 'AEC'] },
+                { subjectName: 'Geography', hindi: 'भूगोल', categories: ['MJC-1', 'MIC-1', 'MDC', 'AEC'] },
                 { subjectName: 'Sociology', hindi: 'समाजशास्त्र', categories: ['MJC-1', 'MIC-1', 'MDC', 'AEC'] },
                 { subjectName: 'Psychology', hindi: 'मनोविज्ञान', categories: ['MJC-1', 'MIC-1', 'MDC', 'AEC'] },
                 { subjectName: 'Hindi', hindi: 'हिंदी', categories: ['MJC-1', 'MIC-1', 'MDC', 'AEC', 'SEC'] },
@@ -25,6 +26,7 @@ const PYQ_CoursesStructure = [
                 { subjectName: 'History', hindi: 'इतिहास', categories: ['MJC-2', 'MIC-2', 'MDC', 'VAC', 'AEC','SEC'] },
                 { subjectName: 'Political Science', hindi: 'राजनीति विज्ञान', categories: ['MJC-2', 'MIC-2', 'MDC', 'AEC', 'SEC', 'VAC'] },
                 { subjectName: 'Economics', hindi: 'अर्थशास्त्र', categories: ['MJC-2', 'MIC-2', 'MDC', 'AEC', 'SEC', 'VAC'] },
+                { subjectName: 'Geography', hindi: 'भूगोल', categories: ['MJC-2', 'MIC-2', 'MDC', 'AEC', 'SEC', 'VAC'] },
                 { subjectName: 'Sociology', hindi: 'समाजशास्त्र', categories: ['MJC-2', 'MIC-2', 'MDC', 'AEC', 'SEC', 'VAC'] },
                 { subjectName: 'Psychology', hindi: 'मनोविज्ञान', categories: ['MJC-2', 'MIC-2', 'MDC', 'AEC', 'SEC', 'VAC'] },
                 { subjectName: 'Hindi', hindi: 'हिंदी', categories: ['MJC-2', 'MIC-2', 'MDC', 'AEC', 'SEC', 'VAC'] },
@@ -37,6 +39,7 @@ const PYQ_CoursesStructure = [
                 { subjectName: 'History', hindi: 'इतिहास', categories: ['MJC-3', 'MJC-4', 'MIC-3', 'MDC', 'VAC', 'AEC','SEC'] },
                 { subjectName: 'Political Science', hindi: 'राजनीति विज्ञान', categories: ['MJC-3', 'MIC-3', 'MDC', 'AEC', 'SEC', 'VAC'] },
                 { subjectName: 'Economics', hindi: 'अर्थशास्त्र', categories: ['MJC-3', 'MIC-3', 'MDC', 'AEC', 'SEC', 'VAC'] },
+                { subjectName: 'Geography', hindi: 'भूगोल', categories: ['MJC-3', 'MIC-3', 'MDC', 'AEC', 'SEC', 'VAC'] },
                 { subjectName: 'Sociology', hindi: 'समाजशास्त्र', categories: ['MJC-3', 'MIC-3', 'MDC', 'AEC', 'SEC', 'VAC'] },
                 { subjectName: 'Psychology', hindi: 'मनोविज्ञान', categories: ['MJC-3', 'MIC-3', 'MDC', 'AEC', 'SEC', 'VAC'] },
                 { subjectName: 'Hindi', hindi: 'हिंदी', categories: ['MJC-3', 'MIC-3', 'MDC', 'AEC', 'SEC', 'VAC'] },
@@ -46,6 +49,7 @@ const PYQ_CoursesStructure = [
                 { subjectName: 'History', hindi: 'इतिहास', categories: ['MJC-5', 'MJC-6', 'MJC-7', 'MIC-4', 'MDC', 'VAC', 'AEC','SEC'] },
                 { subjectName: 'Political Science', hindi: 'राजनीति विज्ञान', categories: ['MJC-4', 'MIC-4', 'MDC', 'AEC', 'SEC', 'VAC'] },
                 { subjectName: 'Economics', hindi: 'अर्थशास्त्र', categories: ['MJC-4', 'MIC-4', 'MDC', 'AEC', 'SEC', 'VAC'] },
+                { subjectName: 'Geography', hindi: 'भूगोल', categories: ['MJC-4', 'MIC-4', 'MDC', 'AEC', 'SEC', 'VAC'] },
                 { subjectName: 'Sociology', hindi: 'समाजशास्त्र', categories: ['MJC-4', 'MIC-4', 'MDC', 'AEC', 'SEC', 'VAC'] },
                 { subjectName: 'Psychology', hindi: 'मनोविज्ञान', categories: ['MJC-4', 'MIC-4', 'MDC', 'AEC', 'SEC', 'VAC'] },
                 { subjectName: 'Hindi', hindi: 'हिंदी', categories: ['MJC-4', 'MIC-4', 'MDC', 'AEC', 'Major', 'Minor', 'SEC', 'VAC'] },
@@ -56,6 +60,7 @@ const PYQ_CoursesStructure = [
                 { subjectName: 'History', hindi: 'इतिहास', categories: ['MJC-8', 'MJC-9', 'MIC-5', 'MIC-6', 'MDC', 'VAC', 'AEC','SEC'] },
                 { subjectName: 'Political Science', hindi: 'राजनीति विज्ञान', categories: ['MJC-5', 'MIC-5', 'MDC', 'AEC', 'SEC', 'VAC'] },
                 { subjectName: 'Economics', hindi: 'अर्थशास्त्र', categories: ['MJC-5', 'MIC-5', 'MDC', 'AEC', 'SEC', 'VAC'] },
+                { subjectName: 'Geography', hindi: 'भूगोल', categories: ['MJC-5', 'MIC-5', 'MDC', 'AEC', 'SEC', 'VAC'] },
                 { subjectName: 'Sociology', hindi: 'समाजशास्त्र', categories: ['MJC-5', 'MIC-5', 'MDC', 'Major', 'Minor', 'AEC', 'SEC', 'VAC'] },
                 { subjectName: 'Psychology', hindi: 'मनोविज्ञान', categories: ['MJC-5', 'MIC-5', 'MDC', 'AEC', 'SEC', 'VAC'] },
                 { subjectName: 'Hindi', hindi: 'हिंदी', categories: ['MJC-5', 'MIC-5', 'Major', 'Minor', 'MDC', 'AEC', 'SEC', 'VAC'] },
@@ -65,16 +70,18 @@ const PYQ_CoursesStructure = [
                 { subjectName: 'History', hindi: 'इतिहास', categories: ['MJC-10', 'MJC-11', 'MJC-12','MIC-7', 'MIC-8', 'MDC', 'VAC', 'AEC','SEC'] },
                 { subjectName: 'Political Science', hindi: 'राजनीति विज्ञान', categories: ['MJC-6', 'MIC-6', 'MDC', 'AEC', 'SEC', 'VAC'] },
                 { subjectName: 'Economics', hindi: 'अर्थशास्त्र', categories: ['MJC-6', 'MIC-6', 'MDC', 'AEC', 'SEC', 'VAC'] },
+                { subjectName: 'Geography', hindi: 'भूगोल', categories: ['MJC-6', 'MIC-6', 'MDC', 'AEC', 'SEC', 'VAC'] },
                 { subjectName: 'Sociology', hindi: 'समाजशास्त्र', categories: ['MJC-6', 'MIC-6', 'MDC', 'AEC', 'SEC', 'VAC'] },
                 { subjectName: 'Psychology', hindi: 'मनोविज्ञान', categories: ['MJC-6', 'MIC-6', 'MDC', 'AEC', 'SEC', 'VAC'] },
                 { subjectName: 'Hindi', hindi: 'हिंदी', categories: ['MJC-6', 'MIC-6', 'MDC', 'AEC', 'Major', 'Minor', 'SEC', 'VAC'] },
                 { subjectName: 'English', hindi: 'अंग्रेज़ी', categories: ['MJC-6', 'MIC-6', 'MDC', 'AEC', 'SEC', 'VAC'] }
             ],
             'Semester 7': [
-                { subjectName: 'History', hindi: 'इतिहास', categories: ['MJC-13', 'MJC-14', 'MJC-15','MIC-9', 'MDC', 'VAC', 'AEC','SEC'] },
-                { subjectName: 'Political Science', hindi: 'राजनीति विज्ञान', categories: ['MJC-7', 'MIC-7', 'MDC', 'AEC', 'SEC', 'VAC'] },
-                { subjectName: 'Economics', hindi: 'अर्थशास्त्र', categories: ['MJC-7', 'MIC-7', 'MDC', 'AEC', 'SEC', 'VAC'] },
-                { subjectName: 'Sociology', hindi: 'समाजशास्त्र', categories: ['MJC-7', 'MIC-7', 'MDC', 'AEC', 'SEC', 'VAC'] },
+                { subjectName: 'History', hindi: 'इतिहास', categories: ['MJC-13', 'MJC-14', 'MJC-15','MIC-9', "MDC", "VAC", "AEC","SEC"] },
+                { subjectName: "Political Science", hindi: "राजनीति विज्ञान", categories: ["MJC-7", "MIC-7", "MDC", "AEC", "SEC", "VAC"] },
+                { subjectName: "Economics", hindi: "अर्थशास्त्र", categories: ["MJC-7", "MIC-7", "MDC", "AEC", "SEC", "VAC"] },
+                { subjectName: "Geography", hindi: "भूगोल", categories: ["MJC-7", "MIC-7", "MDC", "AEC", "SEC", "VAC"] },
+                { subjectName: "Sociology", hindi: "समाजशास्त्र", categories: ["MJC-7", "MIC-7", "MDC", "AEC", "SEC", "VAC"] },
                 { subjectName: 'Psychology', hindi: 'मनोविज्ञान', categories: ['MJC-7', 'MIC-7', 'MDC', 'AEC', 'SEC', 'VAC'] },
                 { subjectName: 'Hindi', hindi: 'हिंदी', categories: ['MJC-7', 'MIC-7', 'MDC', 'AEC', 'Major', 'Minor', 'SEC', 'VAC'] },
                 { subjectName: 'English', hindi: 'अंग्रेज़ी', categories: ['MJC-7', 'MIC-7', 'MDC', 'AEC', 'SEC', 'VAC'] }
@@ -83,6 +90,7 @@ const PYQ_CoursesStructure = [
                 { subjectName: 'History', hindi: 'इतिहास', categories: ['MJC-16', 'MIC-10', 'MDC', 'VAC', 'AEC','SEC'] },
                 { subjectName: 'Political Science', hindi: 'राजनीति विज्ञान', categories: ['MJC-8', 'MIC-8', 'MDC', 'AEC', 'SEC', 'VAC'] },
                 { subjectName: 'Economics', hindi: 'अर्थशास्त्र', categories: ['MJC-8', 'MIC-8', 'MDC', 'AEC', 'SEC', 'VAC'] },
+                { subjectName: 'Geography', hindi: 'भूगोल', categories: ['MJC-8', 'MIC-8', 'MDC', 'AEC', 'SEC', 'VAC'] },
                 { subjectName: 'Sociology', hindi: 'समाजशास्त्र', categories: ['MJC-8', 'MIC-8', 'MDC', 'AEC', 'SEC', 'VAC'] },
                 { subjectName: 'Psychology', hindi: 'मनोविज्ञान', categories: ['MJC-8', 'MIC-8', 'MDC', 'AEC', 'SEC', 'VAC'] },
                 { subjectName: 'Hindi', hindi: 'हिंदी', categories: ['MJC-8', 'MIC-8', 'MDC', 'AEC', 'SEC', 'VAC'] },
@@ -506,6 +514,12 @@ insertPDF("PYQ", "B.A. (Arts)", "Semester 3", "English", "MJC-4", [
 ]);
 
 
+// ------------ B.A. (Arts) Geography Pdfs -----------
+// C:\Users\amits\Coding Files\LNMU PYQ wesite\Cloud LNMU Website Modification\pyq\B.A\Geography\geography_mjc_3_sem_3(2025-29).pdf
+insertPDF("PYQ", "B.A. (Arts)", "Semester 3", "Geography", "MJC-3", [
+    { title: "Geography MJC-3 PYQ 2025-29", year: "2025-29", url: "pyq/B.A/Geography/geography_mjc_3_sem_3(2025-29).pdf" }
+]);
+
 
 
 
@@ -704,6 +718,13 @@ insertPDF("Syllabus", "B.A. (Arts)", "None", "Philosophy", "None", [
 
 insertPDF("Syllabus", "B.A. (Arts)", "None", "Sanskrit", "None", [
     { title: "B.A. Sanskrit Complete Syllabus", year: "2023 Version", url: "Syllabus/BA/Sanskrit.pdf" }
+]);
+
+// C:\Users\amits\Coding Files\LNMU PYQ wesite\Cloud LNMU Website Modification\Syllabus\BA\Economics.pdf
+insertPDF("Syllabus", "B.A. (Arts)", "None", "Economics", "None", [
+    { title: "B.A. Economics Complete 1st & 2nd Semester Syllabus", year: "2023 Version", url: "Syllabus/BA/Economics.pdf" },
+    // C:\Users\amits\Coding Files\LNMU PYQ wesite\Cloud LNMU Website Modification\Syllabus\BA\Economics_3rd_&_4th_semester_syllabus.pdf
+    { title: "B.A. Economics Complete 3rd & 4th Semester Syllabus", year: "2023 Version", url: "Syllabus/BA/Economics_3rd_&_4th_semester_syllabus.pdf" }
 ]);
 
 
