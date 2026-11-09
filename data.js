@@ -513,6 +513,10 @@ insertPDF("PYQ", "B.A. (Arts)", "Semester 3", "English", "MJC-4", [
     { title: "English MJC-4 PYQ 2024-28", year: "2024-28", url: "pyq/B.A/English/english_mjc_4_sem_3(2024-28).pdf" }
 ]);
 
+// C:\Users\amits\Coding Files\LNMU PYQ wesite\Cloud LNMU Website Modification\pyq\B.A\English\english_mjc_3_sem_3(2025-29).pdf
+insertPDF("PYQ", "B.A. (Arts)", "Semester 3", "English", "MJC-3", [
+    { title: "English MJC-3 PYQ 2025-29", year: "2025-29", url: "pyq/B.A/English/english_mjc_3_sem_3(2025-29).pdf" }
+]);
 
 // ------------ B.A. (Arts) Geography Pdfs -----------
 // C:\Users\amits\Coding Files\LNMU PYQ wesite\Cloud LNMU Website Modification\pyq\B.A\Geography\geography_mjc_3_sem_3(2025-29).pdf
@@ -520,6 +524,19 @@ insertPDF("PYQ", "B.A. (Arts)", "Semester 3", "Geography", "MJC-3", [
     { title: "Geography MJC-3 PYQ 2025-29", year: "2025-29", url: "pyq/B.A/Geography/geography_mjc_3_sem_3(2025-29).pdf" }
 ]);
 
+
+// ------------ B.A. (Arts) Political Science Pdfs -----------
+// C:\Users\amits\Coding Files\LNMU PYQ wesite\Cloud LNMU Website Modification\pyq\B.A\Political Science\political_science_mjc_3_sem_3(2025-29).pdf
+insertPDF("PYQ", "B.A. (Arts)", "Semester 3", "Political Science", "MJC-3", [
+    { title: "Political Science MJC-3 PYQ 2025-29", year: "2025-29", url: "pyq/B.A/Political Science/political_science_mjc_3_sem_3(2025-29).pdf" }
+]);
+
+
+// ------------- B.A. (Arts) Economics Pdfs -----------
+// C:\Users\amits\Coding Files\LNMU PYQ wesite\Cloud LNMU Website Modification\pyq\B.A\Economics\economics_mjc_3_sem_3(2025-29).pdf
+insertPDF("PYQ", "B.A. (Arts)", "Semester 3", "Economics", "MJC-3", [
+    { title: "Economics MJC-3 PYQ 2025-29", year: "2025-29", url: "pyq/B.A/Economics/economics_mjc_3_sem_3(2025-29).pdf" }
+]);
 
 
 
